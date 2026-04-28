@@ -97,6 +97,7 @@ outcome-first-decisions/
 ├── SKILL.md                          # entrypoint
 ├── README.md
 ├── LICENSE
+├── PROVENANCE.md                     # authorship and IP hygiene notes
 ├── references/
 │   ├── principles.md                 # decision rules
 │   ├── frameworks-core.md            # 6 core frameworks
@@ -148,7 +149,11 @@ Bring the skill a specific idea, goal, bottleneck, list of options, project back
 
 ## Migration from `thorsten-meyer-skill`
 
-Existing invocations like `Use the thorsten-meyer-skill skill to...` should be updated to `Use the outcome-first-decisions skill to...`. The previous slug is recorded in each `agents/*.yaml` file for reference. No content has been lost in the rename — frameworks, anti-patterns, and principles all carried forward and were expanded.
+Existing invocations like `Use the thorsten-meyer-skill skill to...` should be updated to `Use the outcome-first-decisions skill to...`. The previous slug is recorded in each `agents/*.yaml` file for reference.
+
+## Provenance
+
+`Outcome-First Decisions` is an independently authored skill by Thorsten Meyer. It is not a third-party persona skill, endorsement claim, or adaptation of another creator's package. See `PROVENANCE.md` for maintenance rules that keep the distributed package free of copied quotes, source lists, branded challenges, and externally named frameworks.
 
 ## License
 
