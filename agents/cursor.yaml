@@ -1,7 +1,10 @@
 interface:
   display_name: "Outcome-First Decisions"
   short_description: "Validate ideas, prioritize work, force kill/keep decisions"
-  default_prompt: "Use $outcome-first-decisions to validate this business idea, design a 7-day proof test, and name a kill criterion in writing."
+  default_prompt: "Use the outcome-first-decisions skill to validate this idea, design a 7-day proof test, and name a kill criterion."
+
+skill:
+  entrypoint: "SKILL.md"
 
 policy:
   allow_implicit_invocation: true

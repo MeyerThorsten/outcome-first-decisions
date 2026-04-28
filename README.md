@@ -1,83 +1,153 @@
-# Thorsten Meyer Skill
+# Outcome-First Decisions
 
-A practical business execution skill for agents that helps users decide what is worth doing, what needs proof, and what should be dropped.
+A practical business-decision skill that helps users decide what is worth doing, what needs proof, and what should be dropped — using buyer evidence, one scoreboard metric, and written kill criteria.
 
-The skill is built for founders, operators, creators, consultants, and teams who need sharper prioritization, faster validation, cleaner tradeoffs, and more concrete next actions.
+Built for founders, operators, creators, consultants, and teams who need sharper prioritization, faster validation, cleaner tradeoffs, and more concrete next actions.
+
+> Previously published as `thorsten-meyer-skill`. Update existing invocations to `outcome-first-decisions`.
 
 ## What It Does
 
-- Validates business ideas with short proof tests and real buyer signals.
-- Prioritizes opportunities using money, urgency, reach, repeatability, speed, and fit.
-- Turns scattered goals into one scoreboard metric and a weekly action set.
-- Finds tasks that are busywork, sunk cost, or low-value maintenance.
-- Improves offers by clarifying the buyer, problem, promise, path, and ask.
-- Helps decide whether to keep, change, defer, or kill work.
-- Guides scaling from manual delivery to documentation, delegation, automation, and productization.
+- **Validates** business ideas with 7-day Cash Proof Sprints and real buyer signals.
+- **Prioritizes** opportunities through the Worth Filter (money, urgency, reach, repeatability, speed, fit).
+- **Forces verdicts** — keep, change, kill — with reclaimed capacity allocated to specific work, not freed in the abstract.
+- **Maps scattered goals** to one scoreboard number and a three-action weekly plan.
+- **Cuts** sunk-cost work, vanity work, and low-value maintenance creep.
+- **Sharpens offers** by clarifying the buyer, urgent moment, promise, mechanism, and ask.
+- **Guides scaling** through the Leverage Ladder (manual → document → delegate → automate → productize).
+- **Tracks predictions** and calibration over time, so judgment improves with evidence.
 
 ## How It Responds
 
-For most business decisions, the skill pushes the agent to answer with:
+For most business decisions, the skill answers in this shape:
 
-1. **Verdict:** Worth doing, test first, change, defer, or drop.
-2. **Why:** The business logic behind the recommendation.
-3. **Score or evidence:** What is strong, weak, proven, or assumed.
-4. **Proof test:** The smallest credible test to run next.
-5. **Keep/change/kill criteria:** The thresholds for continuing, adjusting, or stopping.
-6. **Next three actions:** Specific moves to take now.
+1. **Verdict.** Worth doing, test first, change, defer, or drop.
+2. **Why.** The business logic in plain language.
+3. **Evidence read.** Strongest and weakest parts of the case, mapped to the Buyer Evidence Ladder.
+4. **Proof test.** The smallest test that creates real evidence in 1-7 days.
+5. **Keep / change / kill thresholds.** What result means continue, adjust, or stop.
+6. **Next three actions.** Specific actions for today or this week.
+
+The skill applies a self-check protocol before sending: every answer must contain a named buyer, one number, a 7-day proof test, a kill criterion, and three actions for today. If any is missing, the answer is not yet ready.
+
+## Voice
+
+The skill is direct, practical, and outcome-first. It does not motivate. It will challenge comfortable low-value work, push for buyer behavior over opinions, and recommend killing ideas plainly when the evidence says so.
 
 ## Example Prompts
 
 ```text
-Use the thorsten-meyer-skill skill to validate this SaaS idea before I build it.
+Use the outcome-first-decisions skill to validate this SaaS idea before I build it.
 
-Use the thorsten-meyer-skill skill to choose between these three business opportunities.
+Use the outcome-first-decisions skill to choose between these three business opportunities.
 
-Use the thorsten-meyer-skill skill to audit my current projects and tell me what to cut.
+Use the outcome-first-decisions skill to audit my current projects and tell me what to cut.
 
-Use the thorsten-meyer-skill skill to turn my revenue goal into a seven-day execution plan.
+Use the outcome-first-decisions skill to turn my revenue goal into a seven-day execution plan.
 
-Use the thorsten-meyer-skill skill to improve this offer and write a sharper buyer ask.
+Use the outcome-first-decisions skill to improve this offer and write a sharper buyer ask.
+```
+
+### Slash Commands (Claude Code)
+
+```text
+/validate [idea]               — verdict + 7-day proof test + kill criterion
+/worth-filter [options]        — scored comparison + verdict per option
+/kill-audit [list]             — keep/change/kill table + reclaimed capacity
+/weekly-review [scoreboard]    — retrospective + next-week plan
 ```
 
 ## Install
 
 Place this folder in your agent's skills directory.
 
-Codex example:
+Codex / OpenAI:
 
 ```bash
 mkdir -p ~/.codex/skills
-unzip thorsten-meyer-skill.zip -d ~/.codex/skills/
+unzip outcome-first-decisions.zip -d ~/.codex/skills/
 ```
 
-Claude example:
+Claude Code:
 
 ```bash
 mkdir -p ~/.claude/skills
-unzip thorsten-meyer-skill.zip -d ~/.claude/skills/
+unzip outcome-first-decisions.zip -d ~/.claude/skills/
 ```
 
-Any compatible agent can use the skill when the folder is placed in its skills directory and the agent supports skill loading.
+Cursor:
+
+```bash
+mkdir -p ~/.cursor/skills
+unzip outcome-first-decisions.zip -d ~/.cursor/skills/
+```
+
+Any compatible agent can use the skill when the folder is placed in its skills directory.
 
 ## File Structure
 
 ```text
-thorsten-meyer-skill/
-├── SKILL.md
+outcome-first-decisions/
+├── SKILL.md                          # entrypoint
 ├── README.md
 ├── LICENSE
+├── references/
+│   ├── principles.md                 # decision rules
+│   ├── frameworks-core.md            # 6 core frameworks
+│   ├── frameworks-extended.md        # supporting frameworks
+│   ├── mental-models.md              # interpretive lenses
+│   ├── anti-patterns.md              # behaviors to stop
+│   └── one-liners.md                 # sharp rules of thumb
+├── templates/
+│   ├── worth-filter.md               # scoring table
+│   ├── cash-proof-sprint.md          # 7-day test design
+│   ├── kill-list.md                  # commitment audit
+│   └── weekly-review.md              # 20-min weekly plan
+├── examples/
+│   ├── validation.md                 # "should I build X?" worked transcript
+│   ├── prioritization.md             # 3 opportunities, scored
+│   └── kill-audit.md                 # project list audit
+├── subskills/
+│   ├── validate-idea/SKILL.md        # narrow flow: validate one idea
+│   └── kill-list/SKILL.md            # narrow flow: cut commitments
+├── industry-overlays/
+│   ├── saas.md
+│   ├── services-agency.md
+│   ├── creator.md
+│   ├── ecommerce.md
+│   └── b2b.md
+├── outreach/
+│   ├── cold-outreach.md              # 5-sentence templates
+│   ├── customer-interview-guide.md   # behavior-asking questions
+│   ├── pre-sale-ask-language.md      # patterns for selling before building
+│   └── objection-handling.md         # 5-category diagnostic
+├── decision-journal/
+│   ├── decision-log-format.md        # 8-field entry schema
+│   ├── weekly-retrospective.md       # 5-question retro
+│   └── prediction-tracking.md        # calibration over time
 ├── agents/
-│   └── openai.yaml
-└── references/
-    ├── principles.md
-    ├── frameworks.md
-    ├── mental-models.md
-    ├── heuristics.md
-    ├── anti-patterns.md
-    ├── quotes.md
-    └── sources.md
+│   ├── claude.yaml
+│   ├── openai.yaml
+│   └── cursor.yaml
+└── commands/                         # Claude Code slash commands
+    ├── validate.md
+    ├── kill-audit.md
+    ├── worth-filter.md
+    └── weekly-review.md
 ```
 
 ## Best Use
 
 Bring the skill a specific idea, goal, bottleneck, list of options, project backlog, offer, channel plan, or weekly schedule. It works best when it can connect work to a buyer, metric, timeframe, and decision threshold.
+
+## Migration from `thorsten-meyer-skill`
+
+Existing invocations like `Use the thorsten-meyer-skill skill to...` should be updated to `Use the outcome-first-decisions skill to...`. The previous slug is recorded in each `agents/*.yaml` file for reference. No content has been lost in the rename — frameworks, anti-patterns, and principles all carried forward and were expanded.
+
+## License
+
+End User License Agreement. See `LICENSE`. Apply the frameworks and templates to your own work without restriction; redistribution of the skill files is not permitted.
+
+---
+
+By Thorsten Meyer.

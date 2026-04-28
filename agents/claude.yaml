@@ -1,0 +1,23 @@
+interface:
+  display_name: "Outcome-First Decisions"
+  short_description: "Validate ideas, prioritize work, force kill/keep decisions"
+  default_prompt: "Use the outcome-first-decisions skill to validate this business idea, design a 7-day proof test, and name a kill criterion in writing."
+
+skill:
+  entrypoint: "SKILL.md"
+  subskills:
+    - "subskills/validate-idea/SKILL.md"
+    - "subskills/kill-list/SKILL.md"
+
+tools:
+  allowed:
+    - Read
+    - Write
+  rationale: "Decision-coaching skill — no shell or network access required. Read for loading references, Write for capturing decisions and templates."
+
+policy:
+  allow_implicit_invocation: true
+
+attribution:
+  author: "Thorsten Meyer"
+  previously_named: "thorsten-meyer-skill"
