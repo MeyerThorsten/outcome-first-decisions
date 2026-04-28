@@ -71,6 +71,33 @@ Validation predictions track well; prioritization predictions don't.
 
 **Fix:** force a Worth Filter on every prioritization decision. The forced scoring makes the comparison evidence-based.
 
+## Agent Citation Protocol
+
+When the user states a new prediction in a session, the agent does the following:
+
+1. **If memory is available and ≥ 10 entries exist in the same category**, cite the user's hit rate inline. Example:
+
+   > "Your last 12 conversion predictions averaged 42% accuracy at this confidence level. Discounting the new claim accordingly: stated 80% → operative 58%."
+
+2. **If memory is unavailable**, ask once: *"What's your typical hit rate on predictions like this? If you have a decision journal, paste the last 10 entries in this category."* If the user declines, mark the response with `[no calibration data available]` and proceed without citation.
+
+3. **Never apply discount silently.** The user must see the math: stated confidence, observed hit rate at that band, operative confidence used for the recommendation.
+
+When the user crosses a calibration band threshold (10 entries logged in a category):
+
+- Surface the band's hit rate.
+- State the next-90-days adjustment ("predictions in this category are capped at X% confidence until calibration improves").
+- Set the review date.
+
+The protocol applies to predictions the user states in conversation — not just journaled ones. Any phrase like "I'm 80% sure," "this should work," or "I'd put my money on this" triggers the check.
+
+### Hard rules
+
+- Cite the actual numbers, not approximations. "Your 12 last validation predictions hit 42%" — not "you tend to be optimistic."
+- When `category` is missing from a prediction, ask: *"Which category does this fall in — validation, prioritization, pricing, hire, partnership, offer, channel?"* Do not assume.
+- When the sample size is below 10, say so. "Only 6 entries so far in this category — not enough to cite a hit rate."
+- The protocol is not a scolding. The user already wrote the predictions; the agent is helping them read their own track record.
+
 ## Common Trap: Outcome Reweighting
 
 After a prediction is wrong, the temptation is to rewrite the original confidence ("I knew it was risky"). Don't.
