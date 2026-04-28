@@ -1,0 +1,142 @@
+<!--
+  Page: /skills/outcome-first-decisions
+  Format: raw HTML for the WordPress Custom HTML / Code Editor block.
+  No inline styles — relies on the active theme's typography.
+  Replace https://github.com/MeyerThorsten/outcome-first-decisions/releases/download/v1.0.0/outcome-first-decisions.zip before publishing (see install section).
+-->
+
+<p><strong>A skill for AI agents that turns business uncertainty into proof, decisions, and action — fast.</strong> It doesn't motivate. It doesn't cheerlead. It asks for buyer evidence, picks one scoreboard number, and forces a written kill criterion before more time gets spent.</p>
+
+<h2>What this skill actually does</h2>
+
+<p>Most "AI assistant" skills generate plans. <em>Outcome-First Decisions</em> rejects plans that lack a named buyer, a measurable scoreboard number, a 7-day proof test, and a kill criterion. If those are missing, the skill refuses to commit to a verdict and asks the smallest question that fills the gap.</p>
+
+<p>The job, stated explicitly in the skill's <code>SKILL.md</code>:</p>
+
+<blockquote>
+  <p>The skill's job is not to motivate the user or make every idea sound promising. Its job is to help the user spend scarce attention on work that creates measurable business value, and to remove work that only feels productive.</p>
+</blockquote>
+
+<h2>How it answers</h2>
+
+<p>For most decisions, the skill answers in this shape:</p>
+
+<ol>
+  <li><strong>Verdict.</strong> Worth doing, test first, change, defer, or drop.</li>
+  <li><strong>Why.</strong> The business logic in plain language.</li>
+  <li><strong>Evidence read.</strong> Strongest and weakest parts of the case, mapped to the Buyer Evidence Ladder.</li>
+  <li><strong>Proof test.</strong> The smallest test that creates real evidence in 1&ndash;7 days.</li>
+  <li><strong>Keep / change / kill thresholds.</strong> What result means continue, adjust, or stop.</li>
+  <li><strong>Next three actions.</strong> Specific actions for today or this week.</li>
+</ol>
+
+<p>Every answer is gated by a self-check protocol: <em>named buyer / one number / 7-day proof / kill criterion / three actions</em>. If any is missing, the answer is not yet ready.</p>
+
+<h2>The Buyer Evidence Ladder</h2>
+
+<p>Every claim about demand sits on a rung. Lower rungs design tests; higher rungs justify commitment.</p>
+
+<ol>
+  <li>Opinion</li>
+  <li>Compliment</li>
+  <li>Click</li>
+  <li>Reply or signup</li>
+  <li>Qualified conversation</li>
+  <li>Referral</li>
+  <li>Deposit, payment, signed pilot, or signed contract</li>
+  <li>Repeat purchase, retained usage, renewal, or margin improvement</li>
+</ol>
+
+<p>A buyer who pays today is more reliable than a hundred who say they would pay someday.</p>
+
+<h2>What's inside</h2>
+
+<ul>
+  <li><strong>6 core frameworks</strong> &mdash; Worth Filter, Cash Proof Sprint, One Number Map, Kill List Audit, Buyer-Problem-Path, Leverage Ladder.</li>
+  <li><strong>7 supporting frameworks</strong> &mdash; Offer Sharpener, Sharp Ask Builder, Channel Bet Sheet, Price Integrity Check, Repeatability Test, Opportunity Cost Check, Weekly Decision Review.</li>
+  <li><strong>23 named anti-patterns</strong>, <strong>16 principles</strong>, <strong>21 mental models</strong>, disambiguated.</li>
+  <li><strong>5 industry overlays</strong> &mdash; SaaS, services / agency, creator, e-commerce, B2B.</li>
+  <li><strong>Buyer-conversation kit</strong> &mdash; cold-outreach templates, customer-interview guide, pre-sale ask language, objection-handling diagnostics.</li>
+  <li><strong>Decision journal</strong> with queryable YAML schema, weekly retrospective, prediction tracking, and a blind-spots register.</li>
+  <li><strong>Stuck-to-Shipped</strong> 7-day workflow chain for "I'm busy and nothing is moving."</li>
+  <li><strong>Crisis Mode</strong> for runway-pressured situations &mdash; collapses output to verdict + 3 hour-level actions + dollar kill threshold.</li>
+  <li><strong>3 nested subskills</strong> and <strong>5 Claude Code slash commands</strong> for narrow flows: <code>/validate</code>, <code>/worth-filter</code>, <code>/kill-audit</code>, <code>/sharpen</code>, <code>/weekly-review</code>.</li>
+</ul>
+
+<h2>Sample interaction</h2>
+
+<p><strong>Prompt:</strong></p>
+
+<blockquote>
+  <p>"I want to build a SaaS that helps freelance designers manage client feedback rounds. Designers waste hours chasing approvals. I'm thinking about building it. Should I?"</p>
+</blockquote>
+
+<p><strong>Response:</strong></p>
+
+<p><strong>Verdict.</strong> Test first. Do not build.</p>
+
+<p><strong>Why.</strong> "Designers waste hours chasing approvals" is a real-sounding problem, but the offer is unvalidated, the buyer is loosely defined ("freelance designers" is a category, not a segment), and there is no evidence any of them will pay to fix it. Building before a paid pilot is the most common failure path for solo SaaS &mdash; months of code, no buyer, no channel.</p>
+
+<p><strong>Evidence read.</strong></p>
+
+<ul>
+  <li>Strongest: the friction is real (rung 1&ndash;2 &mdash; opinion + own observation).</li>
+  <li>Weakest: no named buyer, no money on the table, no channel that reaches this buyer repeatedly. Currently rung 1.</li>
+</ul>
+
+<p><strong>Proof test.</strong> Cash Proof Sprint, 7 days. A 14-day "approval-cycle audit" &mdash; review the buyer's last 5 client projects, identify the cycles that lost time, give a one-page tightening plan. $250, paid before. Direct outreach to 25 freelance brand designers billing $5k+ per project with 3+ active clients.</p>
+
+<p><strong>Keep / change / kill thresholds.</strong></p>
+
+<ul>
+  <li><strong>Keep:</strong> 5+ paid audits ($1,250+ collected), and 2+ buyers explicitly ask "is there a tool for this?"</li>
+  <li><strong>Change:</strong> 1&ndash;4 paid audits with consistent objections about workflow specifics &mdash; reshape the offer.</li>
+  <li><strong>Kill:</strong> 0 paid audits after 25 contacts. The pain is not painful enough to pay for. Capture the learning and stop.</li>
+</ul>
+
+<p><strong>Next three actions, today.</strong></p>
+
+<ol>
+  <li>Write the 25-name outreach list. Use Twitter/X bio search + LinkedIn.</li>
+  <li>Write the 4-sentence outreach message ending with "$250, paid before, reply by Friday."</li>
+  <li>Send the first 5 messages today.</li>
+</ol>
+
+<p><em>This is a worked transcript that ships with the skill. Two more (prioritization, kill-audit) are included in the package.</em></p>
+
+<h2>How it's different</h2>
+
+<ul>
+  <li><strong>It refuses to soften.</strong> When evidence is rung 1&ndash;2, the verdict is "test first," not "looks promising, here's a roadmap."</li>
+  <li><strong>It tracks calibration.</strong> Predictions are logged with stated confidence. Once 10+ entries exist in a category, the skill cites the user's actual hit rate before accepting new probability claims.</li>
+  <li><strong>It names blind spots.</strong> If a user habitually skips rung 6 before committing, the skill flags it inline on the next decision in that domain.</li>
+  <li><strong>It has a Crisis Mode.</strong> When the user mentions runway, payroll, or a lost biggest customer, the skill collapses output to verdict + three hour-level actions + dollar kill threshold. Worth Filter scoring tables and Evidence Ladder discussion are skipped.</li>
+</ul>
+
+<h2>Install</h2>
+
+<p>Compatible with Claude Code, Codex / OpenAI, and Cursor. Distributed as a versioned package (current release: <strong>v1.0.2</strong>, ~84&nbsp;KB).</p>
+
+<p><a href="https://github.com/MeyerThorsten/outcome-first-decisions/releases/download/v1.0.0/outcome-first-decisions.zip" rel="noopener"><strong>Download the package &mdash; outcome-first-decisions.zip</strong></a></p>
+
+<p>Install into your agent's skills directory:</p>
+
+<pre><code># Claude Code
+mkdir -p ~/.claude/skills && unzip outcome-first-decisions.zip -d ~/.claude/skills/
+
+# Codex / OpenAI
+mkdir -p ~/.codex/skills && unzip outcome-first-decisions.zip -d ~/.codex/skills/
+
+# Cursor
+mkdir -p ~/.cursor/skills && unzip outcome-first-decisions.zip -d ~/.cursor/skills/
+</code></pre>
+
+<p>Once installed, invoke with: <code>Use the outcome-first-decisions skill to validate this idea.</code> Or use one of the slash commands listed above.</p>
+
+<h2>Provenance</h2>
+
+<p><em>Outcome-First Decisions</em> is independently authored. It is not a third-party persona simulation, not an adaptation of another creator's package, and contains no copied quotes, branded framework names, or external source lists. Maintenance rules and a release checklist are documented in <code>PROVENANCE.md</code> inside the package.</p>
+
+<hr>
+
+<p><em>By Thorsten Meyer. Latest release: v1.0.2.</em></p>
