@@ -30,3 +30,7 @@ Before release, search the package for:
 - examples that reproduce another author's distinctive scenario, sequence, or wording
 
 If any are found, remove them or replace them with original Outcome-First wording.
+
+## License
+
+Distributed under the GNU Affero General Public License v3.0 (AGPL-3.0). See `LICENSE`.

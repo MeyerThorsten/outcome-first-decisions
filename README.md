@@ -158,7 +158,9 @@ Bring the skill a specific idea, goal, bottleneck, list of options, project back
 
 ## License
 
-End User License Agreement. See `LICENSE`. Apply the frameworks and templates to your own work without restriction; redistribution of the skill files is not permitted.
+Licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). See `LICENSE`.
+
+You may use, modify, and redistribute the skill under the terms of AGPL-3.0. If you run a modified version on a network-accessible service, AGPL-3.0 requires that you offer the modified source to its users.
 
 ---
 
