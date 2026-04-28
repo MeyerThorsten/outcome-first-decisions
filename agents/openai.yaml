@@ -1,0 +1,7 @@
+interface:
+  display_name: "Thorsten Meyer Skill"
+  short_description: "Prioritize, validate, and cut business work"
+  default_prompt: "Use $thorsten-meyer-skill to validate this business idea and define the next proof test."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,161 +1,63 @@
-# Core Principles
+# Principles
 
-Noah Kagan's principles are rooted in extreme pragmatism, rapid validation, and an unwavering bias for action. They serve as both core beliefs and strict decision rules for building and scaling businesses.
+Use these principles as decision rules. They are the skill's operating philosophy.
 
-## Action Over Overthinking
+## Outcome Before Activity
 
-Begin before you are ready. Making a definitive choice and starting small is always better than sitting on the fence or trying to learn everything before executing.
+Work earns priority by its expected business outcome, not by effort, polish, or urgency theater.
 
-Overthinking creates an illusion of safety. Indecision paralyzes progress. Starting fast and making a call—even if it turns out to be the wrong one—allows you to course-correct and find your path to success.
+Before recommending work, name the result it should create: revenue, qualified demand, retention, margin, speed, trust, distribution, learning, or strategic leverage. If the result is unclear, clarify it or shrink the work until the result can be seen.
 
-> "I just needed to stop thinking so much and go get busy. That meant starting small, starting fast, and not worrying about what I didn't know."
+## Buyer Before Builder
 
-*(sources: src_037, src_016)*
+A business move is weak when the buyer, user, decision maker, or beneficiary is vague.
 
-## Rapid Validation (Velocity to $1)
+Define who must care, why they care now, what pain or aspiration is active, and what action proves interest. A named buyer with an imperfect offer beats a polished offer for nobody in particular.
 
-Never build software or scale a business until you have manually validated that customers will actually pay for the solution.
+## Proof Before Build
 
-Do the service manually before you build the software. Ask for payment upfront rather than hypothetical interest. You should only quit your day job or fully commit once you have proven people will pay for what you are offering.
+Heavy investment must be earned. Before building software, hiring, branding, automating, producing a full course, or creating a complex system, run the smallest proof test that can expose real demand or operational truth.
 
-> "I actually don't start businesses until I know they're already working."
+Accept payment, signed pilots, qualified calls, referrals, repeated usage, renewals, conversion gains, and retained behavior as stronger proof than compliments or clicks.
 
-*(sources: src_019, src_041)*
+## One Scoreboard
 
-## Maximize What Works
+When everything matters, tradeoffs disappear. Pick one current business number for the season or sprint, then judge work by whether it moves that number or removes a real blocker.
 
-Run up the score on what is already working before getting distracted by new ideas or products.
+Secondary metrics can inform the decision, but they should not create competing agendas.
 
-Entrepreneurs often suffer from the 'Next New Product' curse. True compounding happens when you take a channel or product that already has product/market fit and steadily improve it until there is no more opportunity left.
+## Attention Is Capital
 
-> "If you found something that works, there’s so much more meat on the bone than you realize."
+Time, energy, and focus are investment capital. Every commitment competes with every other possible use of those assets.
 
-*(sources: src_003, src_017)*
+Ask: "Would this deserve prime time if I had to fund it with cash?" If not, batch it, delegate it, shrink it, or drop it.
 
-## Relentless Focus on a Single Goal
+## Small Tests Beat Big Opinions
 
-Entrepreneurs should focus relentlessly on a single goal, discarding any ideas or tactics that do not directly contribute to that singular objective.
+The market, customer, team, or operating reality should decide quickly. Use real asks, real deadlines, real prices, real workflows, and real behavior wherever possible.
 
-Having a single, clear focus clarifies every decision. Break down a massive yearly goal into monthly, weekly, and daily targets, and identify the top three actionable things you can do this week to bridge the exact gap.
+A small test is successful if it teaches a decision, even when the idea fails.
 
-> "When you are running your business, have one goal. That's it."
+## Manual First, System Later
 
-*(sources: src_027)*
+Manual delivery reveals exceptions, language, objections, hidden steps, cost, and value. Systems built too early often automate the wrong thing.
 
-## People Make the Difference
+Do it manually until the pattern is visible. Then document, delegate, automate, or productize in that order.
 
-You cannot scale a business without finding high-value people to fill your blind spots, and you must pay them whatever it takes to keep them.
+## Distribution Is Product Work
 
-Transition costs for replacing good employees are incredibly high. Proactively pay top performers well so they stay long-term, and hire people who genuinely love doing the tasks you hate.
+A useful offer still fails if the right people never see it, trust it, or understand why now.
 
-> "The most important thing in literally every single company is people."
+Treat channel access, messaging, referrals, partnerships, search, content, sales, and onboarding as part of the business design, not post-launch decoration.
 
-*(sources: src_003, src_017)*
+## Fit Creates Stamina
 
-## Focus on the Process and Repetitions
+Business requires repetition. Prefer strategies that fit the user's strengths, assets, relationships, constraints, and appetite for repeated execution.
 
-Success hides in the boring, unglamorous repetitions rather than end results.
+Fit does not mean comfort. It means the path is believable enough for the user to stay in the work long enough to learn.
 
-Basing your happiness on being the smartest or richest sets you up for failure. Defining yourself by the daily actions you take brings joy, quicker progress, and builds a standard of excellence.
+## Success Requires Subtraction
 
-> "Defining yourself by the things you do each day (the process) will get you to where you want to be quicker and more joyfully than measuring yourself against others."
+Growth often comes from doing fewer things with more force. Cut weak offers, vague channels, unowned projects, and maintenance creep so stronger work gets enough attention to win.
 
-*(sources: src_037, src_016)*
-
-## Solve Your Own Problems
-
-The best businesses are built by solving problems, annoyances, and inconveniences you personally experience.
-
-When you build a solution for a problem you personally experience, you inherently understand the market and the value of the product. Everyday frustrations are literal business opportunities.
-
-*(sources: src_039, src_011)*
-
-## Always Ask 'What's In It For Them?' (WIIFT)
-
-Approach all partnerships and cold outreach by working backwards from the other person's selfish desires.
-
-People don't owe you anything. You have to create a no-risk win for them to get what you want.
-
-> "if you want a partnership or if you want to work with anyone, all you have to do, it's very simple, you just have to do the WIIFT."
-
-*(sources: src_028)*
-
-## Distribution and Trust Are the Real Moats
-
-Because AI can easily replicate software features, the actual value of a business has shifted to its established audience, email list, and the trust it has built.
-
-In a sea of AI-generated content and easily coded software, having an established audience is the only way to stand out. The code itself is no longer a defensible asset.
-
-> "I think the asset of the software is not an asset anymore. Like that actual thing to sell to someone else is like, okay, I can just replicate this really easy. So, what's the asset? The asset's the email list."
-
-*(sources: src_018)*
-
-## Limitations Breed Creativity
-
-Constraints in time or money force you to invent new, effective solutions rather than relying on lazy, superfluous spending.
-
-Having too much time or money makes you lazy. By artificially or naturally limiting your resources, you force yourself to think outside the box and find high-leverage growth tactics.
-
-> "Limitations create the best creativity... if you can limit the amount of time you have or limit the amount of money you have, you will create creativity."
-
-*(sources: src_028)*
-
-## Operate in Your Sweet Spot
-
-Spend the vast majority of your time at the intersection of what you are amazing at and what you love doing.
-
-Embrace who you are and stop apologizing for what you're not good at. Delegate or hire out everything outside of your sweet spot to people whose sweet spot it is.
-
-> "I think people spend their time, not enough, in their sweet spot. They spend 30% when they should be spending 80% or 90% doing their sweet spot activities."
-
-*(sources: src_041)*
-
-## Reinvest for Maximum Growth
-
-Treat profit not as a reward to be extracted, but as an expense to be aggressively reinvested into the business to compound future growth.
-
-Aiming for zero profit at the end of the year by spending the surplus on growth initiatives fuels a much bigger future year.
-
-> "my goal at the end of every year is to have no profit. And what that means is that I’ve taken all the money and invested it in the business for a bigger future year."
-
-*(sources: src_039, src_003)*
-
-## Start Marketing Before You Launch
-
-Building an audience takes time; you must start marketing long before your product is ready.
-
-Waiting until launch is often driven by the fear of rejection rather than strategic sense. You need to plant the seed and water it before you can eat from the garden.
-
-> "I think actually a very valuable lesson for all marketers out there is that there is a lot of time we try to start eating our garden right after we planted our seed."
-
-*(sources: src_028)*
-
-## The Fear of Starting and Asking is the Ultimate Barrier
-
-People are paralyzed by the fear of rejection or failure, but starting and asking are simply skills that can be developed through practice.
-
-Failing literally just means you're trying something new. Overcoming the initial hesitation to ask for what you want unlocks success in all parts of life.
-
-> "people are afraid of starting and they're afraid of asking and that's really what's holding them back from success in really all parts of their life"
-
-*(sources: src_011)*
-
-## Validation Through Revenue
-
-True business validation only happens when money changes hands.
-
-People might express interest, but getting paid promptly cuts through nonsense and proves the idea actually solves a real problem.
-
-> "Everyone’s interested until they have to pay."
-
-*(sources: src_035)*
-
-## Work for Free to Build Momentum
-
-When starting out or in a slump, doing work for free helps you get off the sidelines, build confidence, and earn referrals.
-
-Once your schedule is full from free work, you have the leverage to start charging. It breaks you out of a negative mindset and often leads to paid opportunities.
-
-> "do it for free until you're too busy and then you could say well I'm too busy so you're gonna have to pay now"
-
-*(sources: src_023)*
+Dropping weak work is not failure when the learning is preserved and capacity moves to a better bet.

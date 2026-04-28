@@ -1,129 +1,219 @@
 # Frameworks
 
-Noah Kagan relies on repeatable, step-by-step processes to validate ideas, structure goals, and overcome psychological barriers. Use these frameworks to move from abstract planning to concrete execution.
+Use these frameworks to turn business uncertainty into a decision, test, or action plan.
 
-## Velocity to $1
+## Worth Filter
 
-A rapid validation process to earn your first dollar as quickly and cheaply as possible.
+Use when choosing between tasks, ideas, products, features, campaigns, partnerships, or channels.
 
-1. Identify a specific problem customers are already discussing.
-2. Find a cheap or existing solution.
-3. Set up the simplest way to collect money (e.g., PayPal button).
-4. Manually fulfill the first orders.
-5. Only scale once proven.
+Score each option from 1 to 5:
 
-> "I call it the velocity to $1 how can you really just break to your first dollar and once you can start getting in that mindset it really changes your perspective."
+1. **Money:** Can it create or protect revenue, margin, cash flow, or enterprise value?
+2. **Urgency:** Does someone care enough to act now?
+3. **Reach:** Can it reach enough of the right people?
+4. **Repeatability:** Can it become a repeatable channel, offer, system, or capability?
+5. **Speed:** Can useful evidence arrive quickly?
+6. **Fit:** Does it match the user's strengths, assets, constraints, and strategic direction?
 
-*(sources: src_019, src_037)*
+Interpretation:
 
-## One Goal Breakdown
+- **24-30:** Strong candidate. Execute or test immediately.
+- **18-23:** Promising but uncertain. Run a proof test before commitment.
+- **12-17:** Defer, shrink, or reshape unless it unlocks a higher-value move.
+- **Under 12:** Drop or radically reframe.
 
-A method for executing massive yearly goals by breaking them down into highly focused weekly actions.
+Output format:
 
-Define one key goal for the entire year. Break it down into monthly, weekly, and daily targets. Identify the specific gap between your current metric and this week's target, then determine the top three actionable things you can do this week to bridge that exact gap.
+```text
+Option: [name]
+Score: [total]/30
+Strongest factor: [factor]
+Weakest factor: [factor]
+Decision: [do/test/defer/drop]
+Next proof: [specific action]
+```
 
-> "What do I need to do this week to go from 500 to 600? What are the three things I can do this week?"
+## Cash Proof Sprint
 
-*(sources: src_027)*
+Use when an idea or offer is unvalidated.
 
-## The Coffee Challenge
+1. State the offer in one sentence.
+2. Name the exact buyer and urgent problem.
+3. Pick the commitment signal: payment, deposit, signed pilot, booked qualified call, referral, application, renewal, or repeated usage.
+4. Write the direct ask.
+5. Contact a small specific buyer group within 24 hours.
+6. Manually deliver the smallest useful version if a buyer says yes.
+7. Decide keep, change, or kill based on the threshold set before the test.
 
-A practice exercise to build the habit of asking for things and overcoming the fear of rejection.
+Default sprint design:
 
-Go to a coffee shop and ask the vendor for a 10% discount. Get rejected (or accepted) and realize that you are still alive and it wasn't that bad.
+- **Duration:** 1 to 7 days.
+- **Target sample:** 10 to 30 relevant buyers or prospects.
+- **Strong proof:** Money, signed commitment, qualified call, referral, or repeated behavior.
+- **Weak proof:** Likes, compliments, broad curiosity, survey intent, or non-buyer attention.
 
-> "the coffee challenge is that you are starting to ask for things and you might get rejected and then you think hey it's not so bad I'm still alive"
+## Buyer-Problem-Path
 
-*(sources: src_023, src_035, src_028)*
+Use when an offer, product, or marketing plan is vague.
 
-## The Law of 100
+Answer:
 
-A commitment framework to prevent quitting too early when starting a new project or marketing channel.
+1. **Buyer:** Who has the problem and budget, authority, or strong motivation?
+2. **Problem:** What painful, costly, urgent, risky, or desired gap do they feel now?
+3. **Path:** Where can the user reach this buyer repeatedly and credibly?
 
-Commit to doing 100 repetitions of an action (100 videos, 100 sales calls, 100 days). Execute without worrying about immediate results, and evaluate success only after the 100 reps are complete.
+If any answer is weak, strengthen it before building more surface area.
 
-> "Just do 100 videos. Get and make 100 calls. Do 100 days and don't quit too soon."
+## Offer Sharpener
 
-*(sources: src_017)*
+Use when the user has a broad service, product, course, tool, or consulting idea.
 
-## Content Multiplication
+Rewrite the offer with five parts:
 
-A system for maximizing the reach of a single successful piece of content across multiple mediums.
+1. **Buyer:** The specific person or segment.
+2. **Moment:** The trigger that makes the problem urgent now.
+3. **Promise:** The measurable or visible outcome.
+4. **Mechanism:** The credible way the result is produced.
+5. **Ask:** The next commitment requested.
 
-Create a core piece of content (e.g., a YouTube video). Extract the audio for a podcast. Hire a writer to turn the transcript into a blog post. Hire another writer to create a guest post. Distribute all variations across social media.
+Template:
 
-> "instead of taking one idea and just putting it on your blog post, make one idea and multiply it across every single medium, respectively."
+```text
+I help [buyer] who are facing [urgent moment] achieve [outcome] through [mechanism]. The next step is [specific ask].
+```
 
-*(sources: src_028)*
+## Sharp Ask Builder
 
-## Creative Deal Structuring
+Use when the user needs outreach, sales, partnerships, hiring, referrals, or internal buy-in.
 
-Tactics for acquiring expensive assets when you lack upfront cash.
+A sharp ask includes:
 
-Determine what the seller actually values. Offer payment plans, equity that vests over time, licensing agreements, or trade services instead of buying outright.
+- the person being asked
+- the reason this matters now
+- the specific commitment requested
+- the deadline or next step
+- the cost, price, time, or responsibility if relevant
 
-> "if you don't have money, creativity is your friend, right? So if you wanna buy a domain is there a way you can do payment plan? Is there a way you can do licensing?"
+Avoid "Would you be interested?" when a stronger ask is possible. Ask for a concrete action.
 
-*(sources: src_039)*
+## One Number Map
 
-## Dream 100 Validation
+Use when the user has too many goals.
 
-A targeted outreach method for launching a new product and getting initial users.
+1. Pick the one number that matters most right now.
+2. Write the current value.
+3. Write the target value.
+4. Define the timeframe.
+5. Calculate the gap.
+6. List the three actions most likely to close the gap this week.
+7. Pause or remove work that does not move the number or unblock those actions.
 
-Make a list of 100 dream customers. Figure out 'What's in it for them' (WIIFT). Reach out one by one and remove all their objections (e.g., do the setup for them, make it free).
+Examples of one-number choices: qualified sales calls, paid pilots, activation rate, churn, gross margin, weekly revenue, cash collected, referral introductions, retained usage, or proposal close rate.
 
-*(sources: src_041)*
+## Kill List Audit
 
-## The 3 Key Hires
+Use when the user is busy, scattered, or protecting too many commitments.
 
-A strategy for scaling a team and filling organizational gaps.
+Mark a task or project as a drop candidate if it has:
 
-1. Home Grow Your People: Promote loyal early employees.
-2. Hire From The Promised Land: Bring in people who have already achieved your specific goals.
-3. Hire For Your Blind Spot: Hire experts to shortcut problems you lack experience in.
+- no buyer or beneficiary
+- no owner
+- no deadline
+- no metric
+- no path to revenue, retention, learning, or strategic leverage
+- no visible progress after repeated effort
+- only sunk-cost justification
+- high energy drain relative to value
 
-> "Hire people who do the things you want to achieve! Don’t always figure things out from scratch."
+For each candidate, choose one action: delete, delegate, shrink, pause, batch, or convert into a proof test.
 
-*(sources: src_003)*
+## Channel Bet Sheet
 
-## The 3-Step Marketing Foundation
+Use when choosing marketing or distribution channels.
 
-A basic framework for figuring out the marketing strategy for any new product or campaign.
+For each channel, define:
 
-1. Identify who the customer is.
-2. Determine where they are.
-3. Define what problem you are solving for them.
+- target buyer
+- message
+- offer
+- expected reach
+- trust advantage
+- cost in time or money
+- first 10 actions
+- proof metric
+- kill criteria
 
-> "I always think marketing is basically three things. It's who is the customer, where are they and what's the problem you're solving?"
+Pick one primary channel and run enough repetitions to learn. Avoid scattering effort across many channels before one channel has been tested properly.
 
-*(sources: src_028)*
+## Price Integrity Check
 
-## The Advisor Pairing Model
+Use when pricing is unclear or the user is avoiding the commercial ask.
 
-A strategy for getting high-level strategic insights without hiring overpriced full-time executives.
+Ask:
 
-Hire affordable, caring people to lead your teams. Find an advisor on LinkedIn who has successfully done the exact job at a high level. Pay the advisor an hourly rate to coach and provide strategic recommendations to your team leader.
+1. What outcome is the buyer paying for?
+2. What is the cost of the problem if it remains unsolved?
+3. What comparable alternatives exist?
+4. What proof supports the price?
+5. What commitment can be requested now?
 
-> "you find people who care that are affordable that are excited about what you're working on and you pair them with an adviser"
+If the price feels scary because proof is weak, run a paid pilot, deposit, or manual service test.
 
-*(sources: src_011)*
+## Leverage Ladder
 
-## The Dollar Challenge
+Use when something is working but depends too much on the user.
 
-A micro-experiment to overcome the fear of starting and asking.
+Move in order:
 
-Ask someone you know for a $1 investment in you and your future business in exchange for regular updates. Feel the fear of asking and do it anyway to realize the power of starting.
+1. **Do:** Perform the work manually and learn the reality.
+2. **Document:** Capture steps, exceptions, language, scripts, and decision rules.
+3. **Delegate:** Hand off repeatable parts to a person.
+4. **Automate:** Automate stable and predictable steps.
+5. **Productize:** Package the result only once demand and delivery are repeatable.
 
-> "Ask someone you know for a dollar investment in you and your future business-one measly dollar!"
+Do not skip steps unless the pattern is already proven.
 
-*(sources: src_037)*
+## Repeatability Test
 
-## Value-Based Raise Request
+Use after a win, sale, pilot, campaign, partnership, or launch.
 
-A method for employees to negotiate higher compensation by tying their work directly to revenue.
+Ask:
 
-Identify areas where you can create wealth for the company. Present the value you've already created. Propose a plan showing exactly how you will generate more money in exchange for a cut of that upside.
+1. What exactly worked?
+2. Why did it work?
+3. Can it happen again without luck?
+4. What input creates the output?
+5. What breaks if volume doubles?
+6. What should be documented before repeating?
 
-> "The easiest way to think about how to get paid more is to create more money."
+One win is a story. A repeatable win is an asset.
 
-*(sources: src_017)*
+## Opportunity Cost Check
+
+Use before accepting a project, meeting, feature, partnership, hire, or new commitment.
+
+Ask:
+
+1. What will this replace?
+2. What result must it create to be worth the time?
+3. What is the smallest version that captures most of the upside?
+4. What would make us stop?
+
+If the user cannot answer, recommend deferring or shrinking the commitment.
+
+## Weekly Decision Review
+
+Use for weekly planning or review.
+
+Sort work into:
+
+- **Keep:** Produces evidence, revenue, learning, leverage, or momentum.
+- **Change:** Has a real opportunity, but the buyer, offer, channel, price, or execution needs adjustment.
+- **Kill:** Consumes time without a credible path to impact.
+
+End with:
+
+1. the one number for the week
+2. the three highest-leverage actions
+3. the one thing to stop or shrink
+4. the proof or result required by the next review

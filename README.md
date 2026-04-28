@@ -1,103 +1,83 @@
-# Noah Kagan — Action-First Entrepreneurship Skill
+# Thorsten Meyer Skill
 
-Stop planning. Start shipping.
+A practical business execution skill for agents that helps users decide what is worth doing, what needs proof, and what should be dropped.
 
-This skill channels Noah Kagan's bias for action, rapid validation, and customer-first thinking into every AI conversation you have. Distilled from 30+ verified sources including interviews, talks, and original writing.
-
-Follows the open [Agent Skills](https://agentskills.io) standard. Works with any compatible agent.
-
-## Install for Your Agent
-
-Pick your agent and run the two commands:
-
-### Claude Code
-```bash
-mkdir -p ~/.claude/skills
-unzip noah-kagan-skill.zip -d ~/.claude/skills/
-```
-
-### Cursor
-```bash
-mkdir -p ~/.cursor/skills
-unzip noah-kagan-skill.zip -d ~/.cursor/skills/
-```
-
-### Windsurf
-```bash
-mkdir -p ~/.windsurf/skills
-unzip noah-kagan-skill.zip -d ~/.windsurf/skills/
-```
-
-### GitHub Copilot
-```bash
-mkdir -p ~/.copilot/skills
-unzip noah-kagan-skill.zip -d ~/.copilot/skills/
-```
-
-### Codex CLI
-```bash
-mkdir -p ~/.codex/skills
-unzip noah-kagan-skill.zip -d ~/.codex/skills/
-```
-
-### Gemini CLI
-```bash
-mkdir -p ~/.gemini/skills
-unzip noah-kagan-skill.zip -d ~/.gemini/skills/
-```
-
-### Amp
-```bash
-mkdir -p ~/.amp/skills
-unzip noah-kagan-skill.zip -d ~/.amp/skills/
-```
-
-### Any Other Agent
-If your agent supports the Agent Skills standard, extract into its skills directory:
-```bash
-unzip noah-kagan-skill.zip -d <your-agent-skills-directory>/
-```
-
-## Usage
-
-Start a new session in your agent and type `/noah-kagan`. The skill loads into context. Ask any question about entrepreneurship, validation, hiring, marketing, or scaling — and your AI will respond through Noah's frameworks instead of generic startup clichés.
-
-Examples:
-
-```
-/noah-kagan I have a SaaS idea for freelance invoicing. Where do I start?
-
-/noah-kagan My goal is $10k MRR this year. I'm at $500. What's my One Goal Breakdown?
-
-/noah-kagan I'm scared to ask my 10 warmest prospects for money. How do I Coffee Challenge this?
-
-Use the noah-kagan skill to audit my week — am I playing business or earning dollars?
-```
+The skill is built for founders, operators, creators, consultants, and teams who need sharper prioritization, faster validation, cleaner tradeoffs, and more concrete next actions.
 
 ## What It Does
 
-The skill pushes you toward action, revenue, and decisive focus instead of analysis paralysis, perfectionism, and multi-goal dilution.
+- Validates business ideas with short proof tests and real buyer signals.
+- Prioritizes opportunities using money, urgency, reach, repeatability, speed, and fit.
+- Turns scattered goals into one scoreboard metric and a weekly action set.
+- Finds tasks that are busywork, sunk cost, or low-value maintenance.
+- Improves offers by clarifying the buyer, problem, promise, path, and ask.
+- Helps decide whether to keep, change, defer, or kill work.
+- Guides scaling from manual delivery to documentation, delegation, automation, and productization.
 
-- **Idea Validation** — Replaces 6-month launch plans with Velocity to $1 (manual fulfillment, PayPal, paying customers first)
-- **Goal Setting** — Replaces quarterly OKR bloat with One Goal Breakdown (one number, monthly/weekly/daily, 3 things this week)
-- **Overcoming Fear** — Reframes rejection and asking as learnable skills (Coffee Challenge, Dollar Challenge, State Your Ask)
-- **Hiring** — The 3 Key Hires pattern and Advisor Pairing Model for bootstrappers
-- **Marketing** — The 3-Step Marketing Foundation (who, where, what problem)
-- **Self-Sabotage** — Diagnoses and kills "playing business" (logos, LLCs, pitch decks before revenue)
+## How It Responds
+
+For most business decisions, the skill pushes the agent to answer with:
+
+1. **Verdict:** Worth doing, test first, change, defer, or drop.
+2. **Why:** The business logic behind the recommendation.
+3. **Score or evidence:** What is strong, weak, proven, or assumed.
+4. **Proof test:** The smallest credible test to run next.
+5. **Keep/change/kill criteria:** The thresholds for continuing, adjusting, or stopping.
+6. **Next three actions:** Specific moves to take now.
+
+## Example Prompts
+
+```text
+Use the thorsten-meyer-skill skill to validate this SaaS idea before I build it.
+
+Use the thorsten-meyer-skill skill to choose between these three business opportunities.
+
+Use the thorsten-meyer-skill skill to audit my current projects and tell me what to cut.
+
+Use the thorsten-meyer-skill skill to turn my revenue goal into a seven-day execution plan.
+
+Use the thorsten-meyer-skill skill to improve this offer and write a sharper buyer ask.
+```
+
+## Install
+
+Place this folder in your agent's skills directory.
+
+Codex example:
+
+```bash
+mkdir -p ~/.codex/skills
+unzip thorsten-meyer-skill.zip -d ~/.codex/skills/
+```
+
+Claude example:
+
+```bash
+mkdir -p ~/.claude/skills
+unzip thorsten-meyer-skill.zip -d ~/.claude/skills/
+```
+
+Any compatible agent can use the skill when the folder is placed in its skills directory and the agent supports skill loading.
 
 ## File Structure
 
-```
-noah-kagan/
-├── SKILL.md                       # Main skill protocol & routing logic
-├── README.md                      # This file
-├── LICENSE                        # EULA
+```text
+thorsten-meyer-skill/
+├── SKILL.md
+├── README.md
+├── LICENSE
+├── agents/
+│   └── openai.yaml
 └── references/
-    ├── principles.md              # 15 core beliefs
-    ├── frameworks.md              # 11 repeatable processes
-    ├── mental-models.md           # 12 cognitive lenses
-    ├── heuristics.md              # 13 rules of thumb
-    ├── anti-patterns.md           # 11 behaviors to avoid
-    ├── quotes.md                  # Signature statements
-    └── sources.md                 # 30 source materials ranked
+    ├── principles.md
+    ├── frameworks.md
+    ├── mental-models.md
+    ├── heuristics.md
+    ├── anti-patterns.md
+    ├── quotes.md
+    └── sources.md
 ```
+
+## Best Use
+
+Bring the skill a specific idea, goal, bottleneck, list of options, project backlog, offer, channel plan, or weekly schedule. It works best when it can connect work to a buyer, metric, timeframe, and decision threshold.

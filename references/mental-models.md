@@ -1,125 +1,96 @@
 # Mental Models
 
-These are the cognitive lenses Noah Kagan uses to interpret business situations, evaluate opportunities, and maintain focus on what truly drives growth.
+Use these lenses to interpret business decisions and redirect effort toward value.
 
-## NOW, Not How (Inaction vs. Patience)
+## Worth vs. Busy
 
-A lens for distinguishing between actively waiting for the right moment (patience) and failing to take action out of fear or over-preparation (inaction).
+Activity is not progress. A task is worth doing when it has a plausible path to revenue, retention, distribution, learning, margin, speed, trust, or leverage.
 
-Prioritizes immediate execution over careful consideration of all facts. People often use 'patience' or 'learning' as an excuse for not taking the necessary steps to move forward.
+When the user lists work, separate motion from business impact.
 
-> "I think people confuse inaction with patience."
+## Evidence Ladder
 
-*(sources: src_037, src_021)*
+Evidence has levels:
 
-## The Growth Filter
+1. Opinion
+2. Compliment
+3. Click
+4. Reply
+5. Qualified conversation
+6. Referral
+7. Deposit, payment, signed pilot, or contract
+8. Repeat purchase, retained usage, renewal, or margin improvement
 
-A decision-making lens where every new idea or tactic is evaluated against a single question: 'Does it help us grow?'
+Use lower levels to design tests. Use higher levels to justify more time, money, hiring, automation, or product development.
 
-Adopted from Mark Zuckerberg. If the answer is no, the idea is immediately discarded, preventing distraction and bloated marketing plans.
+## The Buyer Clock
 
-*(sources: src_027)*
+A problem becomes valuable when the buyer feels it now. Timing can matter as much as pain.
 
-## Business as a Practice Rep
+Prioritize moments with deadlines, new budgets, broken workflows, compliance changes, launches, churn risk, new hires, growth targets, or visible opportunity cost.
 
-Viewing business ideas not as precious inventions that can be stolen, but as reps in a gym.
+## Time as Investment Capital
 
-If someone else is doing your idea, it's just proof of concept. Your goal is to practice the process of building, rather than worrying about having a wholly unique idea.
+Treat time like a portfolio. Put most time into proven winners, some into promising tests, and little into maintenance or speculative noise.
 
-> "Every business has been done, don't worry about it. Think about it as a practice, an experiment, and you're just getting a rep in."
+If a task would not deserve money, question whether it deserves prime attention.
 
-*(sources: src_017)*
+## The Sharp Ask
 
-## Problems as Seeds
+Vague asks create vague answers. Specific asks create evidence.
 
-Viewing personal inconveniences and annoyances not as frustrations, but as literal business opportunities.
+Replace "Would this be interesting?" with "Will you book a call by Friday?", "Will you pay a deposit?", "Will you introduce me to two buyers?", or "Will you try this workflow for seven days?"
 
-If you are willing to pay to solve a problem in your own life, others likely are too.
+## Friction Reveals Design
 
-*(sources: src_011)*
+Where buyers hesitate, users churn, teams stall, or delivery breaks, the business is showing the next improvement opportunity.
 
-## Rejection as Treasure
+Do not hide friction. Name it, measure it, and decide whether it points to offer, channel, product, price, trust, or execution.
 
-Viewing rejection not as a failure to be avoided, but as a valuable metric to collect and a muscle to flex.
+## Distribution Tax
 
-By setting 'Rejection Goals', you build resilience. An example is asking for a 10% discount on regularly priced items just to practice getting rejected.
+Every idea pays a distribution tax. If the user cannot reach the buyer repeatedly and credibly, the idea is more expensive than it looks.
 
-> "Rejection is treasure"
+Ask about channel before recommending more build.
 
-*(sources: src_035)*
+## Bottleneck Before Breadth
 
-## WIIFT (What's In It For Them)
+Adding more projects rarely fixes a blocked system. Find the current constraint: demand, conversion, delivery, retention, margin, talent, cash, or attention.
 
-A lens for approaching any negotiation or cold outreach by working backwards from the other person's selfish desires.
+Move the bottleneck before expanding the surface area.
 
-Instead of asking for a favor, create a no-risk win for the other party.
+## Repeatability Test
 
-*(sources: src_028)*
+One win is useful. A repeatable win is a business asset.
 
-## The Next Thing is the Now Thing
+Ask what must be true for the result to happen again with less luck, less effort, better margin, or better quality.
 
-A lens for focusing on longevity rather than novelty by committing to scale current successful projects instead of starting new ones.
+## Promise vs. Process
 
-Instead of looking for the next big project or business to start, commit to improving and scaling the current successful project for the next decade.
+Buyers usually care about the result, risk reduction, speed, status, ease, or confidence. The process matters only when it increases belief or reduces risk.
 
-*(sources: src_011)*
+Make the promise clear before explaining the machinery.
 
-## AppSumo as a Bank Underwriter
+## Constraint as Strategy
 
-Treating software marketplace curation like a bank issuing a loan to ensure sustainability.
+Limited time, money, team, or attention can force better choices. Use constraints to shrink tests, sharpen buyers, and remove polish.
 
-Because AI makes software easy to build but expensive to run (due to token costs), platforms must underwrite the sustainability and legitimacy of the founder before promoting them.
+The constraint should make the next action smaller, not the ambition foggier.
 
-*(sources: src_018)*
+## The Drain Test
 
-## Big Houses are like Big Dogs
+Some work is not just low value; it drains the energy needed for high-value work.
 
-A metaphor for understanding the hidden maintenance costs of lifestyle upgrades.
+If a recurring task creates little value and heavy drag, remove, simplify, delegate, batch, or convert it into a clear decision.
 
-Just as a larger dog requires more food, a larger house requires significantly more money for utilities, taxes, and maintenance staff.
+## Optionality vs. Commitment
 
-> "Big houses are like big dogs — they need more food."
+Keeping every option open can block progress. Use tests to earn commitment.
 
-*(sources: src_004)*
+Stay flexible about tactics, but be decisive about the current metric, buyer, and proof threshold.
 
-## Knocking a Zero Off
+## Asset Over Effort
 
-A way to measure the productivity gains of AI: whatever team size was previously required to build a product, AI allows you to remove a zero from that number.
+Favor work that leaves behind reusable insight, distribution, process, content, code, templates, relationships, data, or trained operators.
 
-A feat that previously would have required a 10-person team can now be done by one person.
-
-*(sources: src_018)*
-
-## Riding Tsunamis
-
-Choosing to operate within massive, growing macro-trends so that the sheer momentum of the market carries you to success.
-
-Even if your specific execution is flawed, being in a massive wave (like the shift to remote work or early Facebook) ensures a baseline of success.
-
-*(sources: src_023)*
-
-## The Totem Pole Problem
-
-A hierarchy of customer needs and value propositions.
-
-The higher up the totem pole the problem you solve is, the more valuable your business is to the customer. (e.g., Companies care more about getting new customers than who processes their credit cards).
-
-*(sources: src_019)*
-
-## Trash on the Ground
-
-A diagnostic lens for whether you still care about your business.
-
-If you see flaws in your product (trash on the ground) and ignore them, or stop reading company emails, your heart is no longer in it.
-
-> "A telltale sign is you don't care about your product anymore, meaning that you see like trash on the ground, meaning you see something wrong with it and you don't pick it up."
-
-*(sources: src_041)*
-
-## Zooming Out (Signal vs. Scoreboard)
-
-When short-term performance metrics look terrible, zooming out to evaluate underlying health signals prevents panic.
-
-Even if the scoreboard (revenue targets) looks ugly, underlying signals like dropping refunds or improving customer sentiment reveal the true trajectory of the business.
-
-*(sources: src_016)*
+Avoid work that disappears the moment effort stops unless it creates immediate cash or critical learning.

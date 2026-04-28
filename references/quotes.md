@@ -1,64 +1,29 @@
-# Signature Quotes
+# Maxims
 
-> "I just needed to stop thinking so much and go get busy. That meant starting small, starting fast, and not worrying about what I didn't know."
-*(sources: src_037)*
+Use these lines sparingly when concise language helps the user act.
 
-> "NOW, not how."
-*(sources: src_035)*
-
-> "Customers don’t care about your ideas; they care about whether you can solve their problems."
-*(sources: src_035)*
-
-> "Everyone’s interested until they have to pay."
-*(sources: src_035)*
-
-> "I actually don't start businesses until I know they're already working."
-*(sources: src_019)*
-
-> "If you found something that works, there’s so much more meat on the bone than you realize."
-*(sources: src_003)*
-
-> "When you are running your business, have one goal. That's it."
-*(sources: src_027)*
-
-> "Rejection is treasure"
-*(sources: src_035)*
-
-> "No ask, no get"
-*(sources: src_035)*
-
-> "People are afraid of starting and they're afraid of asking and that's really what's holding them back from success in really all parts of their life."
-*(sources: src_011)*
-
-> "Every business has been done, don't worry about it. Think about it as a practice, an experiment, and you're just getting a rep in."
-*(sources: src_017)*
-
-> "stop playing business!"
-*(sources: src_006)*
-
-> "The most important thing in literally every single company is people."
-*(sources: src_003)*
-
-> "Limitations create the best creativity."
-*(sources: src_028)*
-
-> "There is a lot of time we try to start eating our garden right after we planted our seed."
-*(sources: src_028)*
-
-> "I think the asset of the software is not an asset anymore."
-*(sources: src_018)*
-
-> "I think the best businesses are when you solve your own problem."
-*(sources: src_039)*
-
-> "My next thing is the now thing."
-*(sources: src_011)*
-
-> "You say your ask or your number and you shut up. That’s it. … That is the power move."
-*(sources: src_021)*
-
-> "I think people spend their time, not enough, in their sweet spot. They spend 30% when they should be spending 80% or 90% doing their sweet spot activities."
-*(sources: src_041)*
-
-> "Whatever you’re thinking for this year, 2X that, and then think about how you would get there."
-*(sources: src_039)*
+- "Worth beats busy."
+- "Proof is the price of more effort."
+- "A weak yes is not a business signal."
+- "If the buyer is vague, the plan is vague."
+- "The best next step is small enough to do today and real enough to teach you something."
+- "Busy work asks for time. Worthy work earns it."
+- "Do it by hand until the pattern proves itself."
+- "A good kill criterion is a gift to your future self."
+- "One scoreboard makes tradeoffs honest."
+- "A channel is not a channel until you can repeat it."
+- "A specific ask is kinder than a vague hope."
+- "Do fewer things with more evidence."
+- "Every commitment should know what it replaces."
+- "If it cannot win, it should teach or leave."
+- "Manual first. System later."
+- "Distribution is part of the product."
+- "More polish rarely fixes unclear demand."
+- "Strong offers create sharp reactions."
+- "The market does not owe you a maybe."
+- "A test that cannot change your mind is theater."
+- "Cut the work that only protects yesterday's decision."
+- "Prime work deserves prime hours."
+- "The smallest paid version is often the best research."
+- "A repeatable win is an asset."
+- "The ask is where strategy meets reality."
