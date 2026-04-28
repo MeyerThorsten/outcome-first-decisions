@@ -54,6 +54,7 @@ Use the outcome-first-decisions skill to improve this offer and write a sharper 
 /validate [idea]               — verdict + 7-day proof test + kill criterion
 /worth-filter [options]        — scored comparison + verdict per option
 /kill-audit [list]             — keep/change/kill table + reclaimed capacity
+/sharpen [offer]               — Buyer/Moment/Promise/Mechanism/Ask one-pager + pre-sale ask
 /weekly-review [scoreboard]    — retrospective + next-week plan
 ```
 
@@ -109,14 +110,18 @@ outcome-first-decisions/
 │   ├── worth-filter.md               # scoring table
 │   ├── cash-proof-sprint.md          # 7-day test design
 │   ├── kill-list.md                  # commitment audit
-│   └── weekly-review.md              # 20-min weekly plan
+│   ├── weekly-review.md              # 20-min weekly plan
+│   └── offer-one-pager.md            # Buyer/Moment/Promise/Mechanism/Ask
 ├── examples/
 │   ├── validation.md                 # "should I build X?" worked transcript
 │   ├── prioritization.md             # 3 opportunities, scored
 │   └── kill-audit.md                 # project list audit
 ├── subskills/
 │   ├── validate-idea/SKILL.md        # narrow flow: validate one idea
-│   └── kill-list/SKILL.md            # narrow flow: cut commitments
+│   ├── kill-list/SKILL.md            # narrow flow: cut commitments
+│   └── offer-sharpener/SKILL.md      # narrow flow: sharpen vague offer
+├── workflows/
+│   └── stuck-to-shipped.md           # 7-day Stuck-to-Shipped chain
 ├── industry-overlays/
 │   ├── saas.md
 │   ├── services-agency.md
@@ -129,9 +134,10 @@ outcome-first-decisions/
 │   ├── pre-sale-ask-language.md      # patterns for selling before building
 │   └── objection-handling.md         # 5-category diagnostic
 ├── decision-journal/
-│   ├── decision-log-format.md        # 8-field entry schema
+│   ├── decision-log-format.md        # YAML schema entry format
 │   ├── weekly-retrospective.md       # 5-question retro
-│   └── prediction-tracking.md        # calibration over time
+│   ├── prediction-tracking.md        # calibration over time
+│   └── blind-spots.md                # habitual rung-skips register
 ├── agents/
 │   ├── claude.yaml
 │   ├── openai.yaml
@@ -140,6 +146,7 @@ outcome-first-decisions/
     ├── validate.md
     ├── kill-audit.md
     ├── worth-filter.md
+    ├── sharpen.md
     └── weekly-review.md
 ```
 
