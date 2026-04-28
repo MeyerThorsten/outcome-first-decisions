@@ -59,27 +59,33 @@ Use the outcome-first-decisions skill to improve this offer and write a sharper 
 
 ## Install
 
-Place this folder in your agent's skills directory.
+The skill is distributed as a GitHub Release. Each tagged version ships an `outcome-first-decisions.zip` asset. Place the unzipped folder in your agent's skills directory.
 
-Codex / OpenAI:
+Download the latest release:
 
 ```bash
-mkdir -p ~/.codex/skills
-unzip outcome-first-decisions.zip -d ~/.codex/skills/
+gh release download --repo MeyerThorsten/outcome-first-decisions \
+  --pattern 'outcome-first-decisions.zip'
 ```
 
-Claude Code:
+Or pin a specific version:
 
 ```bash
-mkdir -p ~/.claude/skills
-unzip outcome-first-decisions.zip -d ~/.claude/skills/
+gh release download v1.0.0 --repo MeyerThorsten/outcome-first-decisions \
+  --pattern 'outcome-first-decisions.zip'
 ```
 
-Cursor:
+Then unzip into the right directory for your agent:
 
 ```bash
-mkdir -p ~/.cursor/skills
-unzip outcome-first-decisions.zip -d ~/.cursor/skills/
+# Codex / OpenAI
+mkdir -p ~/.codex/skills && unzip outcome-first-decisions.zip -d ~/.codex/skills/
+
+# Claude Code
+mkdir -p ~/.claude/skills && unzip outcome-first-decisions.zip -d ~/.claude/skills/
+
+# Cursor
+mkdir -p ~/.cursor/skills && unzip outcome-first-decisions.zip -d ~/.cursor/skills/
 ```
 
 Any compatible agent can use the skill when the folder is placed in its skills directory.
