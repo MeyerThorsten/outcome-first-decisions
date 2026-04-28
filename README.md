@@ -4,8 +4,6 @@ A practical business-decision skill that helps users decide what is worth doing,
 
 Built for founders, operators, creators, consultants, and teams who need sharper prioritization, faster validation, cleaner tradeoffs, and more concrete next actions.
 
-> Previously published as `thorsten-meyer-skill`. Update existing invocations to `outcome-first-decisions`.
-
 ## What It Does
 
 - **Validates** business ideas with 7-day Cash Proof Sprints and real buyer signals.
@@ -153,10 +151,6 @@ outcome-first-decisions/
 ## Best Use
 
 Bring the skill a specific idea, goal, bottleneck, list of options, project backlog, offer, channel plan, or weekly schedule. It works best when it can connect work to a buyer, metric, timeframe, and decision threshold.
-
-## Migration from `thorsten-meyer-skill`
-
-Existing invocations like `Use the thorsten-meyer-skill skill to...` should be updated to `Use the outcome-first-decisions skill to...`. The previous slug is recorded in each `agents/*.yaml` file for reference.
 
 ## Provenance
 
