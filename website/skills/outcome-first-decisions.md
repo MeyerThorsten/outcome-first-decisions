@@ -49,7 +49,7 @@ A buyer who pays today is more reliable than a hundred who say they would pay so
 - **Decision journal** with queryable YAML schema, weekly retrospective, prediction tracking, and a blind-spots register.
 - **Stuck-to-Shipped** 7-day workflow chain for "I'm busy and nothing is moving."
 - **Crisis Mode** for runway-pressured situations — collapses output to verdict + 3 hour-level actions + dollar kill threshold.
-- **3 nested subskills** and **7 Claude Code slash commands** for narrow flows: `/validate`, `/worth-filter`, `/kill-audit`, `/sharpen`, `/weekly-review`, `/portfolio`, `/log-decision`.
+- **3 nested subskills** and **9 Claude Code slash commands** for narrow flows: `/validate`, `/worth-filter`, `/kill-audit`, `/sharpen`, `/weekly-review`, `/portfolio`, `/log-decision`, `/crisis-mode`, `/stuck-to-shipped`.
 
 ## Sample interaction
 
@@ -147,6 +147,8 @@ Use the outcome-first-decisions skill for my weekly review. Scoreboard number: [
 - `/weekly-review [scoreboard]` — for the Friday check-in. Combines a five-question retrospective with the next-week plan.
 - `/portfolio [bets]` — for running everything at once. Builds the Portfolio Command Deck from your active bets, enforces the portfolio rules (unproven-bet cap, kill dates, capacity sums to reality), and returns per-bet verdicts plus a capacity reallocation.
 - `/log-decision [decision]` — for the moment a verdict lands. Opens a journal entry with the required confidence and kill criterion, runs the calibration citation against your past hit rate, and — in close mode — records the outcome and lesson at the deadline without letting you reweight the original prediction.
+- `/crisis-mode [situation]` — for runway pressure, explicitly invoked (it also triggers automatically on phrases like "70 days of cash"). Verdict, three actions with hour-level deadlines, the dollar kill threshold — and nothing else.
+- `/stuck-to-shipped [load]` — for "I'm busy and nothing is moving." Starts the 7-day protocol: Day-0 Kill List Audit, Day 1–2 One Number Map, Day 3–7 Cash Proof Sprint with daily check-ins and an automatic Day-7 verdict.
 
 ### 3. What the skill will refuse to do
 

@@ -120,6 +120,7 @@ DOC_PAGES = [
     "README.md",
     "website/skills/outcome-first-decisions.md",
     "website/skills/outcome-first-decisions.html",
+    "website/index.html",
 ]
 
 
@@ -199,6 +200,7 @@ def check_marketing_counts() -> None:
     for page in (
         "website/skills/outcome-first-decisions.md",
         "website/skills/outcome-first-decisions.html",
+        "website/index.html",
     ):
         claims = claimed_counts(read(page))
         check(len(claims) >= 5, f"{page}: expected count claims not found (page format changed?)")
@@ -227,6 +229,18 @@ def check_md_html_sync() -> None:
         )
 
 
+# ------------------------------------------------------------ agent manifests
+def check_agent_manifests() -> None:
+    """claude.yaml subskill paths exist and cover every subskills/ dir."""
+    text = read("agents/claude.yaml")
+    listed = set(re.findall(r"\"(subskills/[\w./-]+)\"", text))
+    for path in listed:
+        check((ROOT / path).exists(), f"agents/claude.yaml: missing subskill file {path}")
+    actual = {str(p.relative_to(ROOT)) for p in (ROOT / "subskills").glob("*/SKILL.md")}
+    for path in sorted(actual - listed):
+        fail(f"agents/claude.yaml: subskill not listed: {path}")
+
+
 # ------------------------------------------------------------- relative links
 def check_relative_links() -> None:
     for f in ROOT.rglob("*.md"):
@@ -253,6 +267,7 @@ def main() -> int:
     check_command_frontmatter()
     check_marketing_counts()
     check_md_html_sync()
+    check_agent_manifests()
     check_relative_links()
 
     if FAILURES:

@@ -16,6 +16,8 @@ All notable changes to the Outcome-First Decisions skill package.
 - **SKILL.md**: Vertical Overlay Protocol (match / derive / hybrid), portfolio routing branch, data-grounding posture line, reference-loading rows for the new layers, and memory-protocol entries for the command deck and metric provenance.
 - **`/log-decision` slash command** (`commands/log-decision.md`) — opens journal entries (confidence required, in 0.10 increments) and closes them at the deadline (outcome, lesson, calibration-table row), running the Agent Citation Protocol in both directions. Wires the decision journal and prediction tracking end to end.
 - **Two new worked examples** — `examples/crisis-mode.md` (the collapsed output shape under 70 days of runway) and `examples/portfolio.md` (a five-bet command deck with rule violations surfaced and capacity reallocated).
+- **`/crisis-mode` and `/stuck-to-shipped` slash commands** — the documented Crisis Mode invocation and the flagship 7-day workflow now have real Claude Code entry points (9 commands total).
+- **Standalone landing page** (`website/index.html`) — self-contained dark-editorial distribution page, no external dependencies; counts and command list enforced by the test suite.
 - **CI workflows** — `.github/workflows/test.yml` (structural validation + zip build on every push/PR) and `.github/workflows/release.yml` (tag `v*` → validate → build → GitHub Release with the zip asset).
 - **Structural test harness** (`tests/validate_package.py`) — validates frontmatter, referenced paths across the whole package (commands, subskills, operations, workflows, templates), overlay section structure, slash-command parity and frontmatter, marketing-count truthfulness, md/html page sync, and relative links. Run with `python3 tests/validate_package.py`.
 - **Deterministic zip build** (`build/package.sh`).
@@ -25,6 +27,10 @@ All notable changes to the Outcome-First Decisions skill package.
 
 - README and website pages updated for the new vertical coverage, decision-operations layer, and `/portfolio` command; marketing counts now enforced by tests.
 - Crisis Mode reference path corrected to `references/frameworks-core.md`.
+
+### Fixed
+
+- `agents/claude.yaml` was missing the `offer-sharpener` subskill in its manifest; manifest coverage is now enforced by tests.
 
 ## [1.0.0] — 2026-04-28
 

@@ -59,6 +59,8 @@ Use the outcome-first-decisions skill to improve this offer and write a sharper 
 /weekly-review [scoreboard]    — retrospective + next-week plan
 /portfolio [bets]              — cross-bet command deck + portfolio verdicts
 /log-decision [decision]       — open/close journal entries + calibration citation
+/crisis-mode [situation]       — collapsed output: verdict + 3 hour-deadline actions + kill threshold
+/stuck-to-shipped [load]       — 7-day audit → one number → proof-test protocol
 ```
 
 ## Install
@@ -167,7 +169,9 @@ outcome-first-decisions/
     ├── sharpen.md
     ├── weekly-review.md
     ├── portfolio.md
-    └── log-decision.md
+    ├── log-decision.md
+    ├── crisis-mode.md
+    └── stuck-to-shipped.md
 ```
 
 ## Best Use

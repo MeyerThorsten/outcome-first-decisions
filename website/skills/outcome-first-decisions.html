@@ -61,7 +61,7 @@
   <li><strong>Decision journal</strong> with queryable YAML schema, weekly retrospective, prediction tracking, and a blind-spots register.</li>
   <li><strong>Stuck-to-Shipped</strong> 7-day workflow chain for "I'm busy and nothing is moving."</li>
   <li><strong>Crisis Mode</strong> for runway-pressured situations &mdash; collapses output to verdict + 3 hour-level actions + dollar kill threshold.</li>
-  <li><strong>3 nested subskills</strong> and <strong>7 Claude Code slash commands</strong> for narrow flows: <code>/validate</code>, <code>/worth-filter</code>, <code>/kill-audit</code>, <code>/sharpen</code>, <code>/weekly-review</code>, <code>/portfolio</code>, <code>/log-decision</code>.</li>
+  <li><strong>3 nested subskills</strong> and <strong>9 Claude Code slash commands</strong> for narrow flows: <code>/validate</code>, <code>/worth-filter</code>, <code>/kill-audit</code>, <code>/sharpen</code>, <code>/weekly-review</code>, <code>/portfolio</code>, <code>/log-decision</code>, <code>/crisis-mode</code>, <code>/stuck-to-shipped</code>.</li>
 </ul>
 
 <h2>Sample interaction</h2>
@@ -174,6 +174,8 @@ Use the outcome-first-decisions skill for my weekly review. Scoreboard number: [
   <li><code>/weekly-review [scoreboard]</code> &mdash; for the Friday check-in. Combines a five-question retrospective with the next-week plan.</li>
   <li><code>/portfolio [bets]</code> &mdash; for running everything at once. Builds the Portfolio Command Deck from your active bets, enforces the portfolio rules (unproven-bet cap, kill dates, capacity sums to reality), and returns per-bet verdicts plus a capacity reallocation.</li>
   <li><code>/log-decision [decision]</code> &mdash; for the moment a verdict lands. Opens a journal entry with the required confidence and kill criterion, runs the calibration citation against your past hit rate, and &mdash; in close mode &mdash; records the outcome and lesson at the deadline without letting you reweight the original prediction.</li>
+  <li><code>/crisis-mode [situation]</code> &mdash; for runway pressure, explicitly invoked (it also triggers automatically on phrases like "70 days of cash"). Verdict, three actions with hour-level deadlines, the dollar kill threshold &mdash; and nothing else.</li>
+  <li><code>/stuck-to-shipped [load]</code> &mdash; for "I'm busy and nothing is moving." Starts the 7-day protocol: Day-0 Kill List Audit, Day 1&ndash;2 One Number Map, Day 3&ndash;7 Cash Proof Sprint with daily check-ins and an automatic Day-7 verdict.</li>
 </ul>
 
 <h3>3. What the skill will refuse to do</h3>
