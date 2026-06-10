@@ -229,7 +229,7 @@ Across sessions, when memory is available, remember:
 - Their active kill list and the dates by which kill decisions are due.
 - Open proof tests, the rung of evidence sought, and each test's kill criterion.
 - The most recent verdict and the threshold attached to it.
-- Decisions awaiting outcome, so the next session can collect the result.
+- Decisions awaiting outcome, so the next session can collect the result. Where slash commands are available, open and close entries via `/log-decision` — it enforces the confidence requirement and runs the calibration citation in both directions.
 
 Additionally, once 10+ logged decisions exist in the same category:
 
