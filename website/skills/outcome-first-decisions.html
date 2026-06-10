@@ -61,7 +61,7 @@
   <li><strong>Decision journal</strong> with queryable YAML schema, weekly retrospective, prediction tracking, and a blind-spots register.</li>
   <li><strong>Stuck-to-Shipped</strong> 7-day workflow chain for "I'm busy and nothing is moving."</li>
   <li><strong>Crisis Mode</strong> for runway-pressured situations &mdash; collapses output to verdict + 3 hour-level actions + dollar kill threshold.</li>
-  <li><strong>3 nested subskills</strong> and <strong>6 Claude Code slash commands</strong> for narrow flows: <code>/validate</code>, <code>/worth-filter</code>, <code>/kill-audit</code>, <code>/sharpen</code>, <code>/weekly-review</code>, <code>/portfolio</code>.</li>
+  <li><strong>3 nested subskills</strong> and <strong>7 Claude Code slash commands</strong> for narrow flows: <code>/validate</code>, <code>/worth-filter</code>, <code>/kill-audit</code>, <code>/sharpen</code>, <code>/weekly-review</code>, <code>/portfolio</code>, <code>/log-decision</code>.</li>
 </ul>
 
 <h2>Sample interaction</h2>
@@ -103,7 +103,7 @@
   <li>Send the first 5 messages today.</li>
 </ol>
 
-<p><em>This is a worked transcript that ships with the skill. Two more (prioritization, kill-audit) are included in the package.</em></p>
+<p><em>This is a worked transcript that ships with the skill. Four more (prioritization, kill-audit, crisis-mode, portfolio) are included in the package.</em></p>
 
 <h2>How it's different</h2>
 
@@ -173,6 +173,7 @@ Use the outcome-first-decisions skill for my weekly review. Scoreboard number: [
   <li><code>/sharpen [offer]</code> &mdash; for a vague offer. Returns a Buyer/Moment/Promise/Mechanism/Ask one-pager and a pre-sale ask. Refuses to sharpen without rung-5+ buyer evidence cited.</li>
   <li><code>/weekly-review [scoreboard]</code> &mdash; for the Friday check-in. Combines a five-question retrospective with the next-week plan.</li>
   <li><code>/portfolio [bets]</code> &mdash; for running everything at once. Builds the Portfolio Command Deck from your active bets, enforces the portfolio rules (unproven-bet cap, kill dates, capacity sums to reality), and returns per-bet verdicts plus a capacity reallocation.</li>
+  <li><code>/log-decision [decision]</code> &mdash; for the moment a verdict lands. Opens a journal entry with the required confidence and kill criterion, runs the calibration citation against your past hit rate, and &mdash; in close mode &mdash; records the outcome and lesson at the deadline without letting you reweight the original prediction.</li>
 </ul>
 
 <h3>3. What the skill will refuse to do</h3>
@@ -235,7 +236,7 @@ outcome: null           # filled at deadline
 lesson: null            # filled at deadline
 </code></pre>
 
-<p>Store entries wherever fits your workflow &mdash; Notion, Obsidian, a markdown file, a spreadsheet. The format is what matters: <strong>confidence is required at decision time</strong>, and the <strong>outcome and lesson get filled at the deadline</strong>. Skip those and the entry becomes decision debt.</p>
+<p>Store entries wherever fits your workflow &mdash; Notion, Obsidian, a markdown file, a spreadsheet. The format is what matters: <strong>confidence is required at decision time</strong>, and the <strong>outcome and lesson get filled at the deadline</strong>. Skip those and the entry becomes decision debt. In Claude Code, <code>/log-decision</code> does both ends of this for you: it drafts the entry (and refuses to emit one without confidence, kill criterion, and deadline), and at the deadline it records the outcome and calibration row in close mode.</p>
 
 <p>After 10+ entries in a category, the skill will start citing your hit rate inline. If you predicted 80% confidence on validation calls and hit 42% of them, the skill will say so and discount your next 80% claim accordingly. The calibration is a mirror, not a scolding.</p>
 

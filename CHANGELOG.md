@@ -14,7 +14,10 @@ All notable changes to the Outcome-First Decisions skill package.
   - `portfolio-command-deck.md` — cross-bet operating picture with portfolio rules (unproven-bet cap, mandatory kill dates, named capacity reallocation), drift detection, and a weekly portfolio verdict shape.
 - **`/portfolio` slash command** (`commands/portfolio.md`) and fillable **portfolio deck template** (`templates/portfolio-deck.md`).
 - **SKILL.md**: Vertical Overlay Protocol (match / derive / hybrid), portfolio routing branch, data-grounding posture line, reference-loading rows for the new layers, and memory-protocol entries for the command deck and metric provenance.
-- **Structural test harness** (`tests/validate_package.py`) — validates frontmatter, referenced paths, overlay section structure, slash-command parity across docs, marketing-count truthfulness, md/html page sync, and relative links. Run with `python3 tests/validate_package.py`.
+- **`/log-decision` slash command** (`commands/log-decision.md`) — opens journal entries (confidence required, in 0.10 increments) and closes them at the deadline (outcome, lesson, calibration-table row), running the Agent Citation Protocol in both directions. Wires the decision journal and prediction tracking end to end.
+- **Two new worked examples** — `examples/crisis-mode.md` (the collapsed output shape under 70 days of runway) and `examples/portfolio.md` (a five-bet command deck with rule violations surfaced and capacity reallocated).
+- **CI workflows** — `.github/workflows/test.yml` (structural validation + zip build on every push/PR) and `.github/workflows/release.yml` (tag `v*` → validate → build → GitHub Release with the zip asset).
+- **Structural test harness** (`tests/validate_package.py`) — validates frontmatter, referenced paths across the whole package (commands, subskills, operations, workflows, templates), overlay section structure, slash-command parity and frontmatter, marketing-count truthfulness, md/html page sync, and relative links. Run with `python3 tests/validate_package.py`.
 - **Deterministic zip build** (`build/package.sh`).
 - `CHANGELOG.md` (this file).
 

@@ -58,6 +58,7 @@ Use the outcome-first-decisions skill to improve this offer and write a sharper 
 /sharpen [offer]               — Buyer/Moment/Promise/Mechanism/Ask one-pager + pre-sale ask
 /weekly-review [scoreboard]    — retrospective + next-week plan
 /portfolio [bets]              — cross-bet command deck + portfolio verdicts
+/log-decision [decision]       — open/close journal entries + calibration citation
 ```
 
 ## Install
@@ -118,7 +119,9 @@ outcome-first-decisions/
 ├── examples/
 │   ├── validation.md                 # "should I build X?" worked transcript
 │   ├── prioritization.md             # 3 opportunities, scored
-│   └── kill-audit.md                 # project list audit
+│   ├── kill-audit.md                 # project list audit
+│   ├── crisis-mode.md                # collapsed output under runway pressure
+│   └── portfolio.md                  # command deck across 5 bets
 ├── subskills/
 │   ├── validate-idea/SKILL.md        # narrow flow: validate one idea
 │   ├── kill-list/SKILL.md            # narrow flow: cut commitments
@@ -163,7 +166,8 @@ outcome-first-decisions/
     ├── worth-filter.md
     ├── sharpen.md
     ├── weekly-review.md
-    └── portfolio.md
+    ├── portfolio.md
+    └── log-decision.md
 ```
 
 ## Best Use

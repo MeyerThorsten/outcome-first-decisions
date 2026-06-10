@@ -49,7 +49,7 @@ A buyer who pays today is more reliable than a hundred who say they would pay so
 - **Decision journal** with queryable YAML schema, weekly retrospective, prediction tracking, and a blind-spots register.
 - **Stuck-to-Shipped** 7-day workflow chain for "I'm busy and nothing is moving."
 - **Crisis Mode** for runway-pressured situations — collapses output to verdict + 3 hour-level actions + dollar kill threshold.
-- **3 nested subskills** and **6 Claude Code slash commands** for narrow flows: `/validate`, `/worth-filter`, `/kill-audit`, `/sharpen`, `/weekly-review`, `/portfolio`.
+- **3 nested subskills** and **7 Claude Code slash commands** for narrow flows: `/validate`, `/worth-filter`, `/kill-audit`, `/sharpen`, `/weekly-review`, `/portfolio`, `/log-decision`.
 
 ## Sample interaction
 
@@ -82,7 +82,7 @@ A buyer who pays today is more reliable than a hundred who say they would pay so
 2. Write the 4-sentence outreach message ending with "$250, paid before, reply by Friday."
 3. Send the first 5 messages today.
 
-*This is a worked transcript that ships with the skill. Two more (prioritization, kill-audit) are included in the package.*
+*This is a worked transcript that ships with the skill. Four more (prioritization, kill-audit, crisis-mode, portfolio) are included in the package.*
 
 ## How it's different
 
@@ -146,6 +146,7 @@ Use the outcome-first-decisions skill for my weekly review. Scoreboard number: [
 - `/sharpen [offer]` — for a vague offer. Returns a Buyer/Moment/Promise/Mechanism/Ask one-pager and a pre-sale ask. Refuses to sharpen without rung-5+ buyer evidence cited.
 - `/weekly-review [scoreboard]` — for the Friday check-in. Combines a five-question retrospective with the next-week plan.
 - `/portfolio [bets]` — for running everything at once. Builds the Portfolio Command Deck from your active bets, enforces the portfolio rules (unproven-bet cap, kill dates, capacity sums to reality), and returns per-bet verdicts plus a capacity reallocation.
+- `/log-decision [decision]` — for the moment a verdict lands. Opens a journal entry with the required confidence and kill criterion, runs the calibration citation against your past hit rate, and — in close mode — records the outcome and lesson at the deadline without letting you reweight the original prediction.
 
 ### 3. What the skill will refuse to do
 
@@ -202,7 +203,7 @@ outcome: null           # filled at deadline
 lesson: null            # filled at deadline
 ```
 
-Store entries wherever fits your workflow — Notion, Obsidian, a markdown file, a spreadsheet. The format is what matters: **confidence is required at decision time**, and the **outcome and lesson get filled at the deadline**. Skip those and the entry becomes decision debt.
+Store entries wherever fits your workflow — Notion, Obsidian, a markdown file, a spreadsheet. The format is what matters: **confidence is required at decision time**, and the **outcome and lesson get filled at the deadline**. Skip those and the entry becomes decision debt. In Claude Code, `/log-decision` does both ends of this for you: it drafts the entry (and refuses to emit one without confidence, kill criterion, and deadline), and at the deadline it records the outcome and calibration row in close mode.
 
 After 10+ entries in a category, the skill will start citing your hit rate inline. If you predicted 80% confidence on validation calls and hit 42% of them, the skill will say so and discount your next 80% claim accordingly. The calibration is a mirror, not a scolding.
 
