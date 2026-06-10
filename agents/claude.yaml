@@ -8,6 +8,7 @@ skill:
   subskills:
     - "subskills/validate-idea/SKILL.md"
     - "subskills/kill-list/SKILL.md"
+    - "subskills/offer-sharpener/SKILL.md"
 
 tools:
   allowed:
