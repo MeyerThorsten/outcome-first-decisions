@@ -198,7 +198,7 @@ Explicitly skipped in Crisis Mode:
 - Worth Filter scoring tables.
 - Buyer Evidence Ladder discussion.
 - Multi-paragraph reasoning.
-- Reference loading beyond `frameworks-core.md`.
+- Reference loading beyond `references/frameworks-core.md`.
 
 The Self-Check Protocol applies with shorter horizons:
 
