@@ -228,9 +228,9 @@ Worth Filter scoring tables, the Evidence Ladder, and the full Main Output Shape
 
 ## Install
 
-Compatible with Claude Code, Codex / OpenAI, and Cursor. Distributed as a versioned package (current release: **v1.0.0**, AGPL-3.0).
+Compatible with Claude Code, Codex / OpenAI, and Cursor. Distributed as a versioned package (current release: **v1.1.0**, AGPL-3.0).
 
-[**Download the package — outcome-first-decisions.zip**](https://github.com/MeyerThorsten/outcome-first-decisions/releases/download/v1.0.0/outcome-first-decisions.zip)
+[**Download the package — outcome-first-decisions.zip**](https://github.com/MeyerThorsten/outcome-first-decisions/releases/latest/download/outcome-first-decisions.zip)
 
 Install into your agent's skills directory:
 
@@ -249,4 +249,4 @@ Once installed, invoke with: `Use the outcome-first-decisions skill to validate 
 
 ---
 
-*By Thorsten Meyer. Latest release: v1.0.0. Licensed under AGPL-3.0.*
+*By Thorsten Meyer. Latest release: v1.1.0. Licensed under AGPL-3.0.*

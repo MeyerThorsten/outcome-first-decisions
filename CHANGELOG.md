@@ -2,7 +2,7 @@
 
 All notable changes to the Outcome-First Decisions skill package.
 
-## [Unreleased] — v1.1.0
+## [1.1.0] — 2026-06-10
 
 ### Added
 
@@ -31,6 +31,7 @@ All notable changes to the Outcome-First Decisions skill package.
 ### Fixed
 
 - `agents/claude.yaml` was missing the `offer-sharpener` subskill in its manifest; manifest coverage is now enforced by tests.
+- Website download links now use the durable `releases/latest/download` URL instead of a pinned version, so pages never link a stale release.
 
 ## [1.0.0] — 2026-04-28
 
