@@ -55,12 +55,13 @@
   <li><strong>6 core frameworks</strong> &mdash; Worth Filter, Cash Proof Sprint, One Number Map, Kill List Audit, Buyer-Problem-Path, Leverage Ladder.</li>
   <li><strong>7 supporting frameworks</strong> &mdash; Offer Sharpener, Sharp Ask Builder, Channel Bet Sheet, Price Integrity Check, Repeatability Test, Opportunity Cost Check, Weekly Decision Review.</li>
   <li><strong>23 named anti-patterns</strong>, <strong>16 principles</strong>, <strong>21 mental models</strong>, disambiguated.</li>
-  <li><strong>5 industry overlays</strong> &mdash; SaaS, services / agency, creator, e-commerce, B2B.</li>
+  <li><strong>12 industry overlays</strong> &mdash; SaaS, services / agency, creator, e-commerce, B2B, marketplace, local business, education / coaching, healthcare, fintech, hardware / physical products, nonprofit &mdash; plus an <strong>overlay builder</strong> that derives the same signal structure for any vertical not on the list.</li>
+  <li><strong>Decision-operations layer</strong> &mdash; a typed decision ontology (bets, evidence, capacity, risks as linked objects), a metrics bridge that grounds every scoreboard number in source-system data with provenance, and a Portfolio Command Deck that runs every active bet on one operating picture.</li>
   <li><strong>Buyer-conversation kit</strong> &mdash; cold-outreach templates, customer-interview guide, pre-sale ask language, objection-handling diagnostics.</li>
   <li><strong>Decision journal</strong> with queryable YAML schema, weekly retrospective, prediction tracking, and a blind-spots register.</li>
   <li><strong>Stuck-to-Shipped</strong> 7-day workflow chain for "I'm busy and nothing is moving."</li>
   <li><strong>Crisis Mode</strong> for runway-pressured situations &mdash; collapses output to verdict + 3 hour-level actions + dollar kill threshold.</li>
-  <li><strong>3 nested subskills</strong> and <strong>5 Claude Code slash commands</strong> for narrow flows: <code>/validate</code>, <code>/worth-filter</code>, <code>/kill-audit</code>, <code>/sharpen</code>, <code>/weekly-review</code>.</li>
+  <li><strong>3 nested subskills</strong> and <strong>6 Claude Code slash commands</strong> for narrow flows: <code>/validate</code>, <code>/worth-filter</code>, <code>/kill-audit</code>, <code>/sharpen</code>, <code>/weekly-review</code>, <code>/portfolio</code>.</li>
 </ul>
 
 <h2>Sample interaction</h2>
@@ -111,6 +112,152 @@
   <li><strong>It tracks calibration.</strong> Predictions are logged with stated confidence. Once 10+ entries exist in a category, the skill cites the user's actual hit rate before accepting new probability claims.</li>
   <li><strong>It names blind spots.</strong> If a user habitually skips rung 6 before committing, the skill flags it inline on the next decision in that domain.</li>
   <li><strong>It has a Crisis Mode.</strong> When the user mentions runway, payroll, or a lost biggest customer, the skill collapses output to verdict + three hour-level actions + dollar kill threshold. Worth Filter scoring tables and Evidence Ladder discussion are skipped.</li>
+  <li><strong>It speaks your vertical.</strong> Twelve industry overlays replace the generic proof tests and scoreboard defaults with vertical-true ones &mdash; a clinic gets payer-path tests, a marketplace gets liquidity-wedge tests. For anything else, the overlay builder derives the signals live and states them as checkable assumptions.</li>
+  <li><strong>It demands provenance.</strong> Numbers that drive a verdict come from source-system exports (payment processor, analytics, CRM, bank), carry an as-of date, and expire. A remembered "$5k a week" gets replaced by the export &mdash; and the verdict often changes with it.</li>
+  <li><strong>It runs the whole portfolio, not one decision.</strong> Every active bet sits on one command deck with its evidence rung, capacity, and kill date &mdash; governed by portfolio rules: at most two unproven bets at once, no bet without a kill date, killed capacity reallocated by name.</li>
+</ul>
+
+<h2>Running the whole business on it</h2>
+
+<p>Single verdicts are the entry point. The decision-operations layer is what turns the skill from an advisor into an operating system for the business:</p>
+
+<ul>
+  <li><strong>Decision ontology.</strong> Outcomes, buyer segments, bets, proof tests, evidence, decisions, capacity blocks, and risks are typed objects with IDs and relations &mdash; plain markdown and YAML, queryable with grep, no database. The journal you already keep becomes the Decision object; the ontology adds the graph around it, so an agent can answer "which bets rest on stale evidence?" or "where would a kill free the most capacity?" from your files.</li>
+  <li><strong>Metrics bridge.</strong> A no-naked-numbers rule for anything that drives a keep/change/kill verdict: every scoreboard number carries its source, extraction, and as-of date, with freshness rules per metric type. Claimed numbers still work &mdash; they're just labeled, and the verdict states the dependency.</li>
+  <li><strong>Portfolio Command Deck.</strong> One table, every active bet &mdash; including the side project that is "not really a project." Weekly portfolio verdicts (healthy / overcommitted / starved / drifting), drift detection for zombie bets, and capacity reallocation with a named destination. Invoked directly with <code>/portfolio</code>.</li>
+</ul>
+
+<p>Adoption is staged: start with the journal, add bets and kill dates, add evidence provenance, and adopt the full deck only when you're running enough bets that memory fails &mdash; that's the point where the file graph starts outperforming intuition.</p>
+
+<h2>Manual</h2>
+
+<p>How to actually use the skill once it's installed. This section is the operating guide — read it once before your first session, then keep it as a reference.</p>
+
+<h3>1. What to bring to a session</h3>
+
+<p>The skill is sharp on specific situations and dull on broad ones. Before invoking it, get the following on the table:</p>
+
+<ul>
+  <li><strong>A specific decision, idea, project, or list.</strong> "Should I build X?" is a session. "Help me think about my business" is not.</li>
+  <li><strong>The buyer or user the decision is about.</strong> Even a rough first draft &mdash; "freelance brand designers billing $5k+ per project" beats "designers."</li>
+  <li><strong>Numbers, if any exist.</strong> Current revenue, signups, churn, conversion rate &mdash; whatever's relevant. The skill works with assumptions when numbers are missing, but real numbers always sharpen the answer. Best of all: a fresh export. The metrics bridge will ask for the one source-system reading that matters (Stripe volume, bank CSV, analytics funnel) rather than accepting numbers from memory.</li>
+  <li><strong>Your vertical.</strong> The skill loads the matching industry overlay (12 ship with it) or derives one on the spot for anything else. A "SaaS for clinics" session runs on healthcare buying mechanics, not generic SaaS advice &mdash; the buyer's money decides which overlay leads.</li>
+  <li><strong>The deadline or budget.</strong> "I have 60 days and $5k" changes the verdict; "no constraints" produces a fuzzier answer.</li>
+</ul>
+
+<p>If any of these are missing, the skill will ask the smallest question that fills the gap. Don't pretend to have data you don't &mdash; the answer is still useful with stated assumptions.</p>
+
+<h3>2. How to invoke it</h3>
+
+<p>Two ways: a plain prompt naming the skill, or a slash command if you're in Claude Code.</p>
+
+<p><strong>Plain invocation.</strong> Start your prompt with <em>"Use the outcome-first-decisions skill to&hellip;"</em> followed by the situation. Examples:</p>
+
+<pre><code>Use the outcome-first-decisions skill to validate this idea: [paste idea].
+
+Use the outcome-first-decisions skill to choose between these three opportunities: [paste list].
+
+Use the outcome-first-decisions skill to audit my current commitments: [paste list].
+
+Use the outcome-first-decisions skill to sharpen this offer: [paste current offer].
+
+Use the outcome-first-decisions skill for my weekly review. Scoreboard number: [name + value].
+</code></pre>
+
+<p><strong>Slash commands (Claude Code).</strong> Each command loads a narrow flow with extra hard rules:</p>
+
+<ul>
+  <li><code>/validate [idea]</code> &mdash; for a single idea you're considering. Forces a 7-day Cash Proof Sprint and a written kill criterion.</li>
+  <li><code>/worth-filter [options]</code> &mdash; for two or more comparable options. Returns scored verdicts and a re-trigger condition for anything deferred.</li>
+  <li><code>/kill-audit [list]</code> &mdash; for an active commitment list when you're scattered. Returns keep/change/kill verdicts with reclaimed capacity allocated to surviving work.</li>
+  <li><code>/sharpen [offer]</code> &mdash; for a vague offer. Returns a Buyer/Moment/Promise/Mechanism/Ask one-pager and a pre-sale ask. Refuses to sharpen without rung-5+ buyer evidence cited.</li>
+  <li><code>/weekly-review [scoreboard]</code> &mdash; for the Friday check-in. Combines a five-question retrospective with the next-week plan.</li>
+  <li><code>/portfolio [bets]</code> &mdash; for running everything at once. Builds the Portfolio Command Deck from your active bets, enforces the portfolio rules (unproven-bet cap, kill dates, capacity sums to reality), and returns per-bet verdicts plus a capacity reallocation.</li>
+</ul>
+
+<h3>3. What the skill will refuse to do</h3>
+
+<p>The hard rules are the point of the skill. It will refuse, redirect, or push back when:</p>
+
+<ul>
+  <li><strong>The buyer is a category, not a segment.</strong> "Founders" gets pushed back to "founders of what, at what stage, with what active problem."</li>
+  <li><strong>The evidence is opinion or compliment.</strong> "My friends say it's a great idea" is rung 1&ndash;2; the skill will design a test, not commit to a verdict.</li>
+  <li><strong>The "ask" is a survey or "book a call".</strong> The skill replaces it with a pre-sale pattern: price, scope, deadline, refund policy, and cap.</li>
+  <li><strong>The decision has no kill criterion.</strong> The skill won't approve a commitment without naming the result that would end it.</li>
+  <li><strong>You ask for emotional reassurance.</strong> The skill is not a coach in that sense. It will name the trade-off, not soften it.</li>
+</ul>
+
+<p>You can override any of these by stating the assumption explicitly &mdash; e.g., <em>"I know rung-1 evidence isn't enough; assume the buyer is X and tell me what to test next."</em> The skill respects explicit overrides; it pushes back only on implicit ones.</p>
+
+<h3>4. What you'll get back</h3>
+
+<p>Every full answer comes in six parts:</p>
+
+<ol>
+  <li><strong>Verdict.</strong> One line: <em>worth doing</em>, <em>test first</em>, <em>change</em>, <em>defer</em>, or <em>drop</em>.</li>
+  <li><strong>Why.</strong> Two to four sentences of business logic. No hedging.</li>
+  <li><strong>Evidence read.</strong> Strongest and weakest parts of the case, mapped to a rung (1&ndash;8) on the Buyer Evidence Ladder.</li>
+  <li><strong>Proof test.</strong> A specific 1- to 7-day experiment with sample size, channel, ask, and threshold.</li>
+  <li><strong>Keep / change / kill thresholds.</strong> The result that means continue, adjust, or stop &mdash; written before the test runs.</li>
+  <li><strong>Three actions for today.</strong> Concrete, executable in the next 24 hours.</li>
+</ol>
+
+<p>If you want a tighter answer, ask for "verdict and three actions only." If you want depth, ask for "the full Worth Filter score and per-dimension reasoning."</p>
+
+<h3>5. The weekly cycle</h3>
+
+<p>The skill is designed for a weekly rhythm. The recommended pattern:</p>
+
+<ul>
+  <li><strong>Monday, 15 minutes:</strong> Pull the kept commitments from last Friday's review. Confirm the scoreboard number and the three actions. Send the first buyer-facing message of the week before opening any other tab.</li>
+  <li><strong>Wednesday, 5 minutes:</strong> Mid-week reality check. Did the proof tests produce evidence? If not, what's the smallest action that would?</li>
+  <li><strong>Friday, 20 minutes:</strong> Run <code>/weekly-review</code>. Five questions: what number moved, what proof landed, what got killed, where calibration was off, what decision is being postponed. Output: next-week plan with three actions and one stop.</li>
+</ul>
+
+<p>If you can only do one of these, do Friday. The retrospective is the part that compounds.</p>
+
+<h3>6. Logging decisions and tracking calibration</h3>
+
+<p>Every keep/change/kill verdict belongs in the decision journal. The skill ships a YAML schema for entries:</p>
+
+<pre><code>id: 2026-04-28-cohort-presale
+decision: "Run the 6-week positioning cohort"
+verdict: test           # keep | change | kill | test
+category: pricing       # validation | prioritization | pricing | hire | partnership | offer | channel | other
+buyer: "Past clients + warm referrals"
+prediction:
+  outcome: "5+ paid deposits by Friday May 8"
+  confidence: 0.60      # in 0.10 increments, required at decision time
+kill_criterion: "0-1 deposits → cohort cancels"
+deadline: 2026-05-08
+status: open            # open | hit | missed | drifted
+outcome: null           # filled at deadline
+lesson: null            # filled at deadline
+</code></pre>
+
+<p>Store entries wherever fits your workflow &mdash; Notion, Obsidian, a markdown file, a spreadsheet. The format is what matters: <strong>confidence is required at decision time</strong>, and the <strong>outcome and lesson get filled at the deadline</strong>. Skip those and the entry becomes decision debt.</p>
+
+<p>After 10+ entries in a category, the skill will start citing your hit rate inline. If you predicted 80% confidence on validation calls and hit 42% of them, the skill will say so and discount your next 80% claim accordingly. The calibration is a mirror, not a scolding.</p>
+
+<h3>7. Crisis mode</h3>
+
+<p>If you mention runway under 90 days, missed payroll, a lost biggest customer, or invoke <code>/crisis-mode</code>, the skill compresses the output:</p>
+
+<ul>
+  <li><strong>Verdict.</strong> One line.</li>
+  <li><strong>Three actions for today, with hour-level deadlines.</strong></li>
+  <li><strong>The dollar threshold below which the business closes.</strong></li>
+</ul>
+
+<p>Worth Filter scoring tables, the Evidence Ladder, and the full Main Output Shape are skipped &mdash; in crisis, they're themselves busywork. The skill operates with shorter horizons: named buyer = an existing paying customer who can re-buy in 48 hours; one number = cash collected this week; proof test = inside 7 days, not "up to 7."</p>
+
+<h3>8. Common pitfalls</h3>
+
+<ul>
+  <li><strong>"Looks promising, here's a roadmap."</strong> If you ever see this kind of answer, the skill isn't loaded properly. Reinstall, or restart the session and explicitly invoke the skill by name.</li>
+  <li><strong>The skill keeps asking clarifying questions.</strong> Means you're starting too broad. State assumptions explicitly so it can proceed: <em>"Assume buyer is X, scoreboard number is Y. Now answer."</em></li>
+  <li><strong>The skill softens.</strong> Re-prompt: <em>"Cite the rung of evidence. State the kill criterion in writing. No hedging."</em></li>
+  <li><strong>The verdict feels harsh.</strong> The verdict is a reading of evidence, not a judgment of you. Capture the learning, log the kill, redirect capacity to the next bet.</li>
 </ul>
 
 <h2>Install</h2>
@@ -133,10 +280,6 @@ mkdir -p ~/.cursor/skills && unzip outcome-first-decisions.zip -d ~/.cursor/skil
 
 <p>Once installed, invoke with: <code>Use the outcome-first-decisions skill to validate this idea.</code> Or use one of the slash commands listed above.</p>
 
-<h2>Provenance</h2>
-
-<p><em>Outcome-First Decisions</em> is independently authored. It is not a third-party persona simulation, not an adaptation of another creator's package, and contains no copied quotes, branded framework names, or external source lists. Maintenance rules and a release checklist are documented in <code>PROVENANCE.md</code> inside the package.</p>
-
 <hr>
 
-<p><em>By Thorsten Meyer. Latest release: v1.0.2.</em></p>
+<p><em>By Thorsten Meyer. Latest release: v1.0.0. Licensed under AGPL-3.0.</em></p>

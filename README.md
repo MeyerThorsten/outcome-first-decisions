@@ -14,6 +14,9 @@ Built for founders, operators, creators, consultants, and teams who need sharper
 - **Sharpens offers** by clarifying the buyer, urgent moment, promise, mechanism, and ask.
 - **Guides scaling** through the Leverage Ladder (manual → document → delegate → automate → productize).
 - **Tracks predictions** and calibration over time, so judgment improves with evidence.
+- **Adapts to any vertical** — 12 industry overlays (SaaS, services/agency, creator, e-commerce, B2B, marketplace, local business, education/coaching, healthcare, fintech, hardware, nonprofit) plus an overlay builder that derives the signals for any unlisted industry.
+- **Runs the whole portfolio** — every active bet on one command deck with evidence rungs, capacity allocation, and kill dates, governed by portfolio-level rules.
+- **Grounds numbers in source systems** — scoreboard metrics carry provenance (source, as-of date, freshness) instead of being accepted from memory.
 
 ## How It Responds
 
@@ -54,6 +57,7 @@ Use the outcome-first-decisions skill to improve this offer and write a sharper 
 /kill-audit [list]             — keep/change/kill table + reclaimed capacity
 /sharpen [offer]               — Buyer/Moment/Promise/Mechanism/Ask one-pager + pre-sale ask
 /weekly-review [scoreboard]    — retrospective + next-week plan
+/portfolio [bets]              — cross-bet command deck + portfolio verdicts
 ```
 
 ## Install
@@ -109,7 +113,8 @@ outcome-first-decisions/
 │   ├── cash-proof-sprint.md          # 7-day test design
 │   ├── kill-list.md                  # commitment audit
 │   ├── weekly-review.md              # 20-min weekly plan
-│   └── offer-one-pager.md            # Buyer/Moment/Promise/Mechanism/Ask
+│   ├── offer-one-pager.md            # Buyer/Moment/Promise/Mechanism/Ask
+│   └── portfolio-deck.md             # cross-bet command deck
 ├── examples/
 │   ├── validation.md                 # "should I build X?" worked transcript
 │   ├── prioritization.md             # 3 opportunities, scored
@@ -120,12 +125,24 @@ outcome-first-decisions/
 │   └── offer-sharpener/SKILL.md      # narrow flow: sharpen vague offer
 ├── workflows/
 │   └── stuck-to-shipped.md           # 7-day Stuck-to-Shipped chain
+├── operations/
+│   ├── decision-ontology.md          # linked bet/evidence/capacity objects
+│   ├── metrics-bridge.md             # source-grounded scoreboard numbers
+│   └── portfolio-command-deck.md     # cross-bet operating picture
 ├── industry-overlays/
 │   ├── saas.md
 │   ├── services-agency.md
 │   ├── creator.md
 │   ├── ecommerce.md
-│   └── b2b.md
+│   ├── b2b.md
+│   ├── marketplace.md
+│   ├── local-business.md
+│   ├── education-coaching.md
+│   ├── healthcare.md
+│   ├── fintech.md
+│   ├── hardware-physical.md
+│   ├── nonprofit.md
+│   └── overlay-builder.md            # derive an overlay for any vertical
 ├── outreach/
 │   ├── cold-outreach.md              # 5-sentence templates
 │   ├── customer-interview-guide.md   # behavior-asking questions
@@ -145,7 +162,8 @@ outcome-first-decisions/
     ├── kill-audit.md
     ├── worth-filter.md
     ├── sharpen.md
-    └── weekly-review.md
+    ├── weekly-review.md
+    └── portfolio.md
 ```
 
 ## Best Use
