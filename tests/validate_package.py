@@ -39,12 +39,27 @@ def check_frontmatter() -> None:
 
 
 # ------------------------------------------------- referenced paths must exist
+PATH_REF_SOURCES = ["SKILL.md", "README.md"]
+PATH_REF_DIRS = ["commands", "subskills", "operations", "workflows", "templates"]
+
+
 def check_referenced_paths() -> None:
-    """Every backtick path in SKILL.md and README.md must exist on disk."""
-    for rel in ("SKILL.md", "README.md"):
-        text = read(rel)
+    """Every backtick path in package docs must exist on disk.
+
+    Paths are root-relative by convention; file-relative is accepted as a
+    fallback before failing.
+    """
+    sources = [ROOT / rel for rel in PATH_REF_SOURCES]
+    for d in PATH_REF_DIRS:
+        sources.extend(sorted((ROOT / d).rglob("*.md")))
+    for f in sources:
+        text = f.read_text(encoding="utf-8")
+        rel = f.relative_to(ROOT)
         for ref in re.findall(r"`([\w./-]+(?:\.md|\.yaml|/))`", text):
-            check((ROOT / ref).exists(), f"{rel}: referenced path does not exist: {ref}")
+            check(
+                (ROOT / ref).exists() or (f.parent / ref).exists(),
+                f"{rel}: referenced path does not exist: {ref}",
+            )
 
 
 def check_readme_file_structure() -> None:
@@ -122,6 +137,19 @@ def check_commands_mentioned() -> None:
                 f"/{stem}" in text,
                 f"{page}: does not mention slash command /{stem}",
             )
+
+
+def check_command_frontmatter() -> None:
+    """Every slash command declares description and argument-hint."""
+    for f in sorted((ROOT / "commands").glob("*.md")):
+        text = f.read_text(encoding="utf-8")
+        m = re.match(r"\A---\n(.*?)\n---\n", text, re.DOTALL)
+        check(bool(m), f"commands/{f.name}: missing frontmatter block")
+        if not m:
+            continue
+        for field in ("description:", "argument-hint:"):
+            check(field in m.group(1), f"commands/{f.name}: frontmatter missing `{field}`")
+        check("$ARGUMENTS" in text, f"commands/{f.name}: missing $ARGUMENTS placeholder")
 
 
 # ---------------------------------------------------------------- count claims
@@ -222,6 +250,7 @@ def main() -> int:
     check_readme_file_structure()
     check_overlays()
     check_commands_mentioned()
+    check_command_frontmatter()
     check_marketing_counts()
     check_md_html_sync()
     check_relative_links()

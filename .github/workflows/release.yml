@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate package structure
+        run: python3 tests/validate_package.py
+
+      - name: Build zip
+        run: ./build/package.sh
+
+      - name: Create GitHub Release with zip asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            outcome-first-decisions.zip \
+            --title "${GITHUB_REF_NAME}" \
+            --notes "See CHANGELOG.md for details. Install: unzip outcome-first-decisions.zip into your agent's skills directory."
