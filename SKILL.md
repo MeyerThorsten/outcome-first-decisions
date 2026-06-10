@@ -20,6 +20,7 @@ Be direct, practical, and outcome-first.
 - Preserve useful learning when something is stopped.
 - Give the user actions they can take today.
 - Judge evidence by quality, not by story.
+- Ground scoreboard numbers in source-system data, not memory. Numbers driving a verdict carry provenance (source, as-of date) per `operations/metrics-bridge.md`; unverified numbers are marked `claimed` and the verdict states that dependency.
 
 If context is missing, make the smallest reasonable assumption and state it. Ask only for information that would change the business decision.
 
@@ -43,8 +44,19 @@ Before answering, route the user's situation to the right framework:
 5. **Is something working but draining?** → Leverage Ladder, Repeatability Test.
 6. **Is the user reviewing the week?** → Weekly Decision Review.
 7. **Is the buyer or moment unclear?** → Buyer Clock, Buyer-Problem-Path.
+8. **Are multiple bets running at once, or is capacity split across projects?** → Portfolio Command Deck (`operations/portfolio-command-deck.md`).
 
 If multiple routes apply, choose the one closest to the user's current bottleneck.
+
+## Vertical Overlay Protocol
+
+Before applying any framework, identify the user's vertical and load its overlay — overlays replace the generic Worth Filter inputs, proof tests, and scoreboard defaults with vertical-true ones.
+
+1. **Match.** If the vertical matches a file in `industry-overlays/` (saas, services-agency, creator, ecommerce, b2b, marketplace, local-business, education-coaching, healthcare, fintech, hardware-physical, nonprofit), load it.
+2. **Derive.** If no overlay matches, run `industry-overlays/overlay-builder.md` — derive the overlay from its six questions, present it as stated assumptions, and proceed.
+3. **Hybrid.** If the business spans verticals, the buyer's money decides which overlay leads (overlay-builder's Hybrid Rule). State the choice in one line.
+
+Skip the protocol only for decisions where the vertical is irrelevant (e.g., a pure personal-capacity kill audit).
 
 ## Reference Loading
 
@@ -59,6 +71,9 @@ Load reference files only when they help the current mode:
 | Offer improvement          | frameworks-extended.md, mental-models.md                |
 | Scaling something working  | frameworks-core.md, principles.md                       |
 | Weekly review              | frameworks-extended.md, decision-journal/, templates/   |
+| Portfolio / multiple bets  | operations/portfolio-command-deck.md, operations/decision-ontology.md |
+| Metric verification        | operations/metrics-bridge.md                            |
+| Any vertical-specific mode | the matching industry-overlays/ file, or overlay-builder.md |
 
 Default lightweight pair when the mode is unclear: principles.md + one-liners.md.
 
@@ -209,7 +224,8 @@ In crisis, the full Main Output Shape is itself busywork. Send the verdict, send
 
 Across sessions, when memory is available, remember:
 
-- The user's current scoreboard number, target, and deadline.
+- The user's current scoreboard number, target, and deadline — with provenance (source, as-of date) per `operations/metrics-bridge.md`.
+- The active Portfolio Command Deck: open bets, their evidence rungs, kill dates, and capacity allocation.
 - Their active kill list and the dates by which kill decisions are due.
 - Open proof tests, the rung of evidence sought, and each test's kill criterion.
 - The most recent verdict and the threshold attached to it.
@@ -233,10 +249,11 @@ Load only what the active mode requires:
 - `references/mental-models.md` — lenses for reframing decisions.
 - `references/anti-patterns.md` — behaviors that look productive but waste capacity.
 - `references/one-liners.md` — sharp rules of thumb.
-- `templates/` — fillable artifacts: worth-filter, cash-proof-sprint, kill-list, weekly-review, offer-one-pager.
+- `templates/` — fillable artifacts: worth-filter, cash-proof-sprint, kill-list, weekly-review, offer-one-pager, portfolio-deck.
 - `examples/` — worked transcripts in the Main Output Shape.
 - `subskills/` — focused single-purpose flows: validate-idea, kill-list, offer-sharpener.
 - `workflows/` — multi-day named protocols: stuck-to-shipped (7-day chain).
-- `industry-overlays/` — vertical-specific signal lists (saas, services-agency, creator, ecommerce, b2b).
+- `operations/` — run-the-business layer: decision-ontology (linked bet/evidence/capacity objects), metrics-bridge (source-grounded numbers), portfolio-command-deck (cross-bet operating picture).
+- `industry-overlays/` — vertical-specific signal lists (saas, services-agency, creator, ecommerce, b2b, marketplace, local-business, education-coaching, healthcare, fintech, hardware-physical, nonprofit) plus overlay-builder.md for any unlisted vertical.
 - `outreach/` — buyer-conversation kit: cold outreach, interview guide, pre-sale ask, objection handling.
 - `decision-journal/` — log format, weekly retrospective, calibration tracking, blind-spots register.
