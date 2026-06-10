@@ -1,5 +1,7 @@
 # Outcome-First Decisions
 
+**Website:** [meyerthorsten.github.io/outcome-first-decisions](https://meyerthorsten.github.io/outcome-first-decisions/)
+
 A practical business-decision skill that helps users decide what is worth doing, what needs proof, and what should be dropped — using buyer evidence, one scoreboard metric, and written kill criteria.
 
 Built for founders, operators, creators, consultants, and teams who need sharper prioritization, faster validation, cleaner tradeoffs, and more concrete next actions.
